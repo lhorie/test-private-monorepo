@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "pull": "git pull && cd public && git pull"
+  }
+}

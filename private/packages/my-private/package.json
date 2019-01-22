@@ -1,0 +1,7 @@
+{
+  "name": "my-private",
+  "version": "0.0.1",
+  "dependencies": {
+    "my-public": "0.0.1"
+  }
+}
