@@ -1,5 +1,7 @@
 {
   "scripts": {
-    "pull": "git pull && cd public && git pull"
+    "pull": "git pull && cd public && git pull",
+    "commit": "foo() {\ngit add . && git commit -m \"$1\" && cd public && git add . && git commit -m \"$1\"\n};\nfoo",
+    "push": "git push origin master && cd public && git push origin master"
   }
 }
