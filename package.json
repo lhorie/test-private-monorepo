@@ -1,8 +1,6 @@
 {
+  "private": true,
   "scripts": {
-    "fetch": "git fetch; cd public; git fetch",
-    "merge": "foo() {\ngit merge \"$1\"; cd public; git merge \"$1\"\n};\nfoo",
-    "commit": "foo() {\ngit add .; git commit -m \"$1\"; cd public; git add .; git commit -m \"$1\"\n};\nfoo",
-    "push": "foo() {\ngit push $1 $2; cd public; git push $1 $2\n};\nfoo"
+    "git": "run() {\n cd public; git $@; cd ..; git $@ \n}\n run"
   }
 }
