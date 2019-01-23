@@ -1,6 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "git": "run() {\n cd public; git $@; cd ..; git $@ \n}\n run"
+    "git": "run() {\n cd public; git \"$@\"; cd ..; git \"$@\"; \n}\n run"
   }
 }
