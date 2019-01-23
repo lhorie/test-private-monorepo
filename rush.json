@@ -259,6 +259,10 @@
       "projectFolder": "public/packages/my-public",
     },
     {
+      "packageName": "my-other",
+      "projectFolder": "public/packages/my-other",
+    },
+    {
       "packageName": "my-private",
       "projectFolder": "private/packages/my-private",
     },
