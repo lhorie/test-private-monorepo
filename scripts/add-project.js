@@ -28,10 +28,44 @@ if (category && project) {
     exec(`rm -rf ${category}/${project}/.gitignore`);
     exec(`rm -rf ${category}/${project}/.gitattributes`);
 
+    if (!data.scripts) data.scripts = {};
+    if (!data.devDependencies) data.devDependencies = {};
+
     // setup `build` script
-    if (!data.scripts) data.scripts = {}
     data.scripts.build = data.scripts.build || data.scripts.transpile || 'echo ok';
     delete data.scripts.transpile;
+
+    // setup test script
+    data.scripts.test = data.scripts.test || 'echo ok';
+
+    // setup lint script
+    data.scripts.lint = data.scripts.lint || 'eslint src';
+
+    // setup flow script
+    data.scripts.flow = data.scripts.flow || 'flow check';
+
+    // install dependencies
+    const deps = [
+      'babel-eslint',
+      'eslint',
+      'eslint-config-fusion',
+      'eslint-plugin-cup',
+      'eslint-plugin-flowtype',
+      'eslint-plugin-import',
+      'eslint-plugin-jest',
+      'eslint-plugin-prettier',
+      'eslint-plugin-react',
+      'prettier',
+      'flow-bin',
+    ];
+    deps.map(dep => {
+      data.devDependencies[dep] = `^${exec(`npm info ${dep} version`).trim()}`;
+    });
+
+    // setup flow config
+    rewrite(`${__dirname}/../${category}/${project}/.flowconfig`, t => t
+      .replace(/\[include\]\n/, '[include]\n../../common/temp/node_modules')
+    );
 
     // rush.json is not actually JSON, use string replacement
     rewrite(`${__dirname}/../rush.json`, t => t
