@@ -25,7 +25,6 @@ if (category && project) {
     exec(`rm -rf ${category}/${project}/node_modules`);
     exec(`rm -rf ${category}/${project}/yarn.lock`);
     exec(`rm -rf ${category}/${project}/package-lock.json`);
-    exec(`rm -rf ${category}/${project}/.gitignore`);
     exec(`rm -rf ${category}/${project}/.gitattributes`);
 
     if (!data.scripts) data.scripts = {};
@@ -59,12 +58,12 @@ if (category && project) {
       'flow-bin',
     ];
     deps.map(dep => {
-      data.devDependencies[dep] = `^${exec(`npm info ${dep} version`).trim()}`;
+      data.devDependencies[dep] = `^${exec(`npm info ${dep} version`).toString().trim()}`;
     });
 
     // setup flow config
     rewrite(`${__dirname}/../${category}/${project}/.flowconfig`, t => t
-      .replace(/\[include\]\n/, '[include]\n../../common/temp/node_modules')
+      .replace(/\[include\]\n/, '[include]\n../../common/temp/node_modules\n')
     );
 
     // rush.json is not actually JSON, use string replacement
