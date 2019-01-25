@@ -62,9 +62,11 @@ if (category && project) {
     });
 
     // setup flow config
-    rewrite(`${__dirname}/../${category}/${project}/.flowconfig`, t => t
-      .replace(/\[include\]\n/, '[include]\n../../common/temp/node_modules\n')
-    );
+    try {
+      rewrite(`${__dirname}/../${category}/${project}/.flowconfig`, t => t
+        .replace(/\[include\]\n/, '[include]\n../../common/temp/node_modules\n')
+      );
+    } catch (e) {}
 
     // rush.json is not actually JSON, use string replacement
     rewrite(`${__dirname}/../rush.json`, t => t
