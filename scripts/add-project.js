@@ -92,6 +92,9 @@ if (category && project) {
   });
   exec('rush update', {cwd: `${__dirname}/../public`});
   exec('rush update');
+  exec('rush test');
+  exec('rush lint');
+  exec('rush flow');
 }
 
 function rewrite(file, fn) {
