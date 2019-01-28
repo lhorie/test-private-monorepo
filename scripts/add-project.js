@@ -120,6 +120,6 @@ function upgrade(data, dep) {
 }
 function upgradeSection(data, section, dep) {
   if (data[section] && data[section][dep]) {
-    data[section][dep] = `^${exec(`npm info ${dep} version 2>/dev/null`).trim()}`;
+    data[section][dep] = `^${exec(`npm info ${dep} version 2>/dev/null`).toString().trim()}`;
   }
 }
