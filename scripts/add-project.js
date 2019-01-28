@@ -92,6 +92,7 @@ if (category && project) {
   });
   exec('rush update', {cwd: `${__dirname}/../public`});
   exec('rush update');
+  exec('rush build');
   exec('rush test');
   exec('rush lint');
   exec('rush flow');
