@@ -43,6 +43,12 @@ if (category && project) {
     // setup flow script
     data.scripts.flow = data.scripts.flow || 'flow check';
 
+    // fix eslint-plugin-jest
+    if (data.dependencies['eslint-plugin-jest']) {
+      data.devDependencies['eslint-plugin-jest'] = data.dependencies['eslint-plugin-jest'];
+      delete data.dependencies['eslint-plugin-jest'];
+    }
+
     // upgrade deps
     upgrade(data, '@babel/preset-react');
     upgrade(data, 'create-universal-package', '3.4.6');
