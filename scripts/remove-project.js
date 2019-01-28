@@ -15,24 +15,27 @@ const {execSync: exec} = require('child_process');
 const [,, category, project] = process.argv;
 
 if (category && project) {
-  const {name} = readJson(`${__dirname}/../${category}/${project}/package.json`);
-  exec(`rm -rf ${__dirname}/${category}/${project}`);
+  try {
+    const {name} = readJson(`${__dirname}/../${category}/${project}/package.json`);
+    exec(`rm -rf ${__dirname}/../${category}/${project}`);
 
-  rewrite(`${__dirname}/rush.json`, t => t
-    .replace(`{
-    {
-      "packageName": "${name}",
-      "projectFolder": "${category}/${project}",
-    },\n`)
-  );
-  if (category === 'public') {
-    rewrite(`${__dirname}/public/rush.json`, t => t
-      .replace(`{
-    {
-      "packageName": "${name}",
-      "projectFolder": "${category}/${project}",
-    },\n`)
+    rewrite(`${__dirname}/../rush.json`, t => t
+      .replace(`    {
+        "packageName": "${name}",
+        "projectFolder": "${category}/${project}",
+      },\n`, '')
     );
+    if (category === 'public') {
+      rewrite(`${__dirname}/../public/rush.json`, t => t
+        .replace(`    {
+        "packageName": "${name}",
+        "projectFolder": "${category}/${project}",
+      },\n`, '')
+      );
+    }
+    console.log(`Removed ${project}`);
+  } catch (e) {
+    console.error(e)
   }
 }
 
