@@ -114,9 +114,9 @@ function json(file, fn) {
   write(file, JSON.stringify(data, null, 2), 'utf8');
 }
 function upgrade(data, dep) {
-  upgrade(data, 'dependencies', dep);
-  upgrade(data, 'devDependencies', dep);
-  upgrade(data, 'peerDependencies', dep);
+  upgradeSection(data, 'dependencies', dep);
+  upgradeSection(data, 'devDependencies', dep);
+  upgradeSection(data, 'peerDependencies', dep);
 }
 function upgradeSection(data, section, dep) {
   if (data[section] && data[section][dep]) {
