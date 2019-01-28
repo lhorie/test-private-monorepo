@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-font-loader-react",
+      "projectFolder": "public/fusion-plugin-font-loader-react"
+    },
+    {
       "packageName": "fusion-plugin-react-helmet-async",
       "projectFolder": "public/fusion-plugin-react-helmet-async"
     },
