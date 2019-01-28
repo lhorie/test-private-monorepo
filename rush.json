@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-universal-logger",
+      "projectFolder": "public/fusion-plugin-universal-logger"
+    },
+    {
       "packageName": "fusion-plugin-csrf-protection",
       "projectFolder": "public/fusion-plugin-csrf-protection"
     },
