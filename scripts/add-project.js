@@ -43,6 +43,13 @@ if (category && project) {
     // setup flow script
     data.scripts.flow = data.scripts.flow || 'flow check';
 
+    // upgrade deps
+    upgrade(data, '@babel/preset-react');
+    upgrade(data, 'eslint-preset-cup');
+    upgrade(data, 'fusion-core');
+    upgrade(data, 'react');
+    upgrade(data, 'react-dom');
+
     // install dependencies
     const deps = [
       'babel-eslint',
@@ -105,4 +112,14 @@ function json(file, fn) {
   const data = JSON.parse(read(file, 'utf8'));
   fn(data);
   write(file, JSON.stringify(data, null, 2), 'utf8');
+}
+function upgrade(data, dep) {
+  upgradeSection(data, 'dependencies', dep);
+  upgradeSection(data, 'devDependencies', dep);
+  upgradeSection(data, 'peerDependencies', dep);
+}
+function upgradeSection(data, section, dep) {
+  if (data[section] && data[section][dep]) {
+    data[section][dep] = `^${exec(`npm info ${dep} version 2>/dev/null`).toString().trim()}`;
+  }
 }
