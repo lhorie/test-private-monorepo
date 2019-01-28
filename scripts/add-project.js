@@ -45,10 +45,15 @@ if (category && project) {
 
     // upgrade deps
     upgrade(data, '@babel/preset-react');
+    upgrade(data, 'create-universal-package');
+    upgrade(data, 'eslint-plugin-cup');
     upgrade(data, 'eslint-preset-cup');
     upgrade(data, 'fusion-core');
+    upgrade(data, 'nyc');
     upgrade(data, 'react');
     upgrade(data, 'react-dom');
+    upgrade(data, 'tape-cup');
+    upgrade(data, 'unitest');
 
     // install dependencies
     const deps = [
@@ -120,6 +125,6 @@ function upgrade(data, dep) {
 }
 function upgradeSection(data, section, dep) {
   if (data[section] && data[section][dep]) {
-    data[section][dep] = `^${exec(`npm info ${dep} version 2>/dev/null`).toString().trim()}`;
+    data[section][dep] = `^${exec(`npm show ${dep} version 2>/dev/null`).toString().trim()}`;
   }
 }
