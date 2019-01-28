@@ -51,6 +51,7 @@ if (category && project) {
 
     // upgrade deps
     upgrade(data, '@babel/preset-react');
+    upgrade(data, 'babel-plugin-transform-flow-strip-types');
     upgrade(data, 'create-universal-package', '3.4.6');
     upgrade(data, 'enzyme');
     upgrade(data, 'enzyme-adapter-react-16');
@@ -113,7 +114,9 @@ if (category && project) {
       );
     }
   });
+  exec('rush purge', {cwd: `${__dirname}/../public`})
   exec('rush update', {cwd: `${__dirname}/../public`});
+  exec('rush purge');
   exec('rush update');
   exec('rush build');
   exec('rush test');
