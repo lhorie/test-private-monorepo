@@ -45,7 +45,7 @@ if (category && project) {
 
     // upgrade deps
     upgrade(data, '@babel/preset-react');
-    upgrade(data, 'create-universal-package');
+    upgrade(data, 'create-universal-package', '3.4.6');
     upgrade(data, 'eslint-plugin-cup');
     upgrade(data, 'eslint-preset-cup');
     upgrade(data, 'fusion-core');
@@ -118,13 +118,13 @@ function json(file, fn) {
   fn(data);
   write(file, JSON.stringify(data, null, 2), 'utf8');
 }
-function upgrade(data, dep) {
-  upgradeSection(data, 'dependencies', dep);
-  upgradeSection(data, 'devDependencies', dep);
-  upgradeSection(data, 'peerDependencies', dep);
+function upgrade(data, dep, value) {
+  upgradeSection(data, 'dependencies', dep, value);
+  upgradeSection(data, 'devDependencies', dep, value);
+  upgradeSection(data, 'peerDependencies', dep, value);
 }
-function upgradeSection(data, section, dep) {
+function upgradeSection(data, section, dep, value) {
   if (data[section] && data[section][dep]) {
-    data[section][dep] = `^${exec(`npm show ${dep} version 2>/dev/null`).toString().trim()}`;
+    data[section][dep] = `^${value || exec(`npm show ${dep} version 2>/dev/null`).toString().trim()}`;
   }
 }
