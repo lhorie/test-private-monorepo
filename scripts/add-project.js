@@ -114,13 +114,18 @@ if (category && project) {
       );
     }
   });
+  console.log(`- Updating ${project}`);
   exec('rush purge', {cwd: `${__dirname}/../public`})
   exec('rush update', {cwd: `${__dirname}/../public`});
   exec('rush purge');
   exec('rush update');
+  console.log(`- Building ${project}`);
   exec('rush build');
+  console.log(`- Testing ${project}`);
   exec('rush test');
+  console.log(`- Linting ${project}`);
   exec('rush lint');
+  console.log(`- Checking Flow on ${project}`);
   exec('rush flow');
 }
 

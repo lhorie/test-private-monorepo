@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-introspect",
+      "projectFolder": "public/fusion-plugin-introspect"
+    },
+    {
       "packageName": "fusion-plugin-universal-logger",
       "projectFolder": "public/fusion-plugin-universal-logger"
     },
