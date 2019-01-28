@@ -46,6 +46,8 @@ if (category && project) {
     // upgrade deps
     upgrade(data, '@babel/preset-react');
     upgrade(data, 'create-universal-package', '3.4.6');
+    upgrade(data, 'enzyme');
+    upgrade(data, 'enzyme-adapter-react-16');
     upgrade(data, 'eslint-plugin-cup');
     upgrade(data, 'eslint-preset-cup');
     upgrade(data, 'fusion-core');
