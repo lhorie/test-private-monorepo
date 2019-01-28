@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-react-helmet-async",
+      "projectFolder": "public/fusion-plugin-react-helmet-async"
+    },
+    {
       "packageName": "fusion-plugin-jwt",
       "projectFolder": "public/fusion-plugin-jwt"
     },
