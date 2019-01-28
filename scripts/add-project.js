@@ -43,6 +43,13 @@ if (category && project) {
     // setup flow script
     data.scripts.flow = data.scripts.flow || 'flow check';
 
+    // upgrade deps
+    upgrade(data, '@babel/preset-react');
+    upgrade(data, 'eslint-preset-cup');
+    upgrade(data, 'fusion-core');
+    upgrade(data, 'react');
+    upgrade(data, 'react-dom');
+
     // install dependencies
     const deps = [
       'babel-eslint',
@@ -62,9 +69,11 @@ if (category && project) {
     });
 
     // setup flow config
-    rewrite(`${__dirname}/../${category}/${project}/.flowconfig`, t => t
-      .replace(/\[include\]\n/, '[include]\n../../common/temp/node_modules\n')
-    );
+    try {
+      rewrite(`${__dirname}/../${category}/${project}/.flowconfig`, t => t
+        .replace(/\[include\]\n/, '[include]\n../../common/temp/node_modules\n')
+      );
+    } catch (e) {}
 
     // rush.json is not actually JSON, use string replacement
     rewrite(`${__dirname}/../rush.json`, t => t
@@ -90,6 +99,10 @@ if (category && project) {
   });
   exec('rush update', {cwd: `${__dirname}/../public`});
   exec('rush update');
+  exec('rush build');
+  exec('rush test');
+  exec('rush lint');
+  exec('rush flow');
 }
 
 function rewrite(file, fn) {
@@ -99,4 +112,14 @@ function json(file, fn) {
   const data = JSON.parse(read(file, 'utf8'));
   fn(data);
   write(file, JSON.stringify(data, null, 2), 'utf8');
+}
+function upgrade(data, dep) {
+  upgrade(data, 'dependencies', dep);
+  upgrade(data, 'devDependencies', dep);
+  upgrade(data, 'peerDependencies', dep);
+}
+function upgradeSection(data, section, dep) {
+  if (data[section] && data[section][dep]) {
+    data[section][dep] = `^${exec(`npm info ${dep} version 2>/dev/null`).trim()}`;
+  }
 }
