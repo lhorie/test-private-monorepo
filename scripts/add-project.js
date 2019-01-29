@@ -58,6 +58,7 @@ if (category && project) {
     upgrade(data, 'eslint-plugin-cup');
     upgrade(data, 'eslint-preset-cup');
     upgrade(data, 'fusion-core');
+    upgrade(data, 'fusion-plugin-universal-events');
     upgrade(data, 'fusion-react');
     upgrade(data, 'fusion-test-utils');
     upgrade(data, 'fusion-tokens');
