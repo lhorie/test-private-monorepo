@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-react-redux",
+      "projectFolder": "public/fusion-plugin-react-redux"
+    },
+    {
       "packageName": "fusion-plugin-introspect",
       "projectFolder": "public/fusion-plugin-introspect"
     },
