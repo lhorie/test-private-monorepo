@@ -44,7 +44,7 @@ if (category && project) {
     data.scripts.flow = data.scripts.flow || 'flow check';
 
     // fix eslint-plugin-jest
-    if (data.dependencies['eslint-plugin-jest']) {
+    if (data.dependencies && data.dependencies['eslint-plugin-jest']) {
       data.devDependencies['eslint-plugin-jest'] = data.dependencies['eslint-plugin-jest'];
       delete data.dependencies['eslint-plugin-jest'];
     }
