@@ -122,7 +122,7 @@ if (category && project) {
   console.log(`- Building ${project}`);
   exec('rush build');
   console.log(`- Testing ${project}`);
-  exec('rush test');
+  exec('rush test -p 4');
   console.log(`- Linting ${project}`);
   exec('rush lint');
   console.log(`- Checking Flow on ${project}`);
