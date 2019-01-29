@@ -64,6 +64,7 @@ if (category && project) {
     upgrade(data, 'fusion-tokens');
     upgrade(data, 'koa-bodyparser');
     upgrade(data, 'nyc');
+    upgrade(data, 'prop-types');
     upgrade(data, 'react');
     upgrade(data, 'react-dom');
     upgrade(data, 'react-redux', '5.1.1');

@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-error-handling",
+      "projectFolder": "public/fusion-plugin-error-handling"
+    },
+    {
       "packageName": "fusion-plugin-i18n",
       "projectFolder": "public/fusion-plugin-i18n"
     },
