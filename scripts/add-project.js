@@ -51,12 +51,14 @@ if (category && project) {
 
     // upgrade deps
     upgrade(data, '@babel/preset-react');
+    upgrade(data, 'apollo-client');
     upgrade(data, 'babel-plugin-transform-flow-strip-types');
     upgrade(data, 'create-universal-package', '3.4.6');
     upgrade(data, 'enzyme');
     upgrade(data, 'enzyme-adapter-react-16');
     upgrade(data, 'eslint-plugin-cup');
     upgrade(data, 'eslint-plugin-import');
+    upgrade(data, 'eslint-plugin-jest');
     upgrade(data, 'eslint-preset-cup');
     upgrade(data, 'fusion-core');
     upgrade(data, 'fusion-plugin-universal-events');
@@ -67,6 +69,7 @@ if (category && project) {
     upgrade(data, 'nyc');
     upgrade(data, 'prop-types');
     upgrade(data, 'react');
+    upgrade(data, 'react-apollo');
     upgrade(data, 'react-dom');
     upgrade(data, 'react-redux', '5.1.1');
     upgrade(data, 'redux');
