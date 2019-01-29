@@ -64,6 +64,7 @@ if (category && project) {
     upgrade(data, 'nyc');
     upgrade(data, 'react');
     upgrade(data, 'react-dom');
+    upgrade(data, 'react-redux', '5.1.1');
     upgrade(data, 'tape-cup');
     upgrade(data, 'unitest');
 
