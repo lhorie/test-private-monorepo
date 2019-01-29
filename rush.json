@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-universal-events-react",
+      "projectFolder": "public/fusion-plugin-universal-events-react"
+    },
+    {
       "packageName": "fusion-rpc-redux",
       "projectFolder": "public/fusion-rpc-redux"
     },
