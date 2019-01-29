@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-i18n-react",
+      "projectFolder": "public/fusion-plugin-i18n-react"
+    },
+    {
       "packageName": "fusion-plugin-node-performance-emitter",
       "projectFolder": "public/fusion-plugin-node-performance-emitter"
     },
