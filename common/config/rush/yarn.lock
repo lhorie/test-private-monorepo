@@ -783,6 +783,30 @@
     invariant "^2.2.2"
     semver "^5.3.0"
 
+"@rush-temp/fusion-plugin-browser-performance-emitter@file:./projects/fusion-plugin-browser-performance-emitter.tgz":
+  version "0.0.0"
+  resolved "file:./projects/fusion-plugin-browser-performance-emitter.tgz#cbd5faacbb0d04a5da0d703585d5ec7ac5a79c77"
+  dependencies:
+    babel-eslint "^10.0.1"
+    babel-plugin-transform-flow-strip-types "^6.22.0"
+    create-universal-package "^3.4.6"
+    eslint "^5.12.1"
+    eslint-config-fusion "^4.0.0"
+    eslint-plugin-cup "^2.0.1"
+    eslint-plugin-flowtype "^3.2.1"
+    eslint-plugin-import "^2.15.0"
+    eslint-plugin-jest "^22.1.3"
+    eslint-plugin-prettier "^3.0.1"
+    eslint-plugin-react "^7.12.4"
+    flow-bin "^0.91.0"
+    fusion-core "^1.10.2"
+    fusion-test-utils "^1.3.1"
+    fusion-tokens "^1.1.1"
+    nyc "^13.1.0"
+    prettier "^1.16.1"
+    tape-cup "^4.7.1"
+    unitest "^2.1.1"
+
 "@rush-temp/fusion-plugin-csrf-protection@file:./projects/fusion-plugin-csrf-protection.tgz":
   version "0.0.0"
   resolved "file:./projects/fusion-plugin-csrf-protection.tgz"
@@ -900,6 +924,34 @@
     tape-cup "^4.7.1"
     unitest "^2.1.1"
 
+"@rush-temp/fusion-plugin-node-performance-emitter@file:./projects/fusion-plugin-node-performance-emitter.tgz":
+  version "0.0.0"
+  resolved "file:./projects/fusion-plugin-node-performance-emitter.tgz#05e33b27f6311435e6c6a26cd659695e1e1919f3"
+  dependencies:
+    assert "^1.4.1"
+    babel-eslint "^10.0.1"
+    babel-plugin-transform-flow-strip-types "^6.22.0"
+    create-universal-package "^3.4.6"
+    eslint "^5.12.1"
+    eslint-config-fusion "^4.0.0"
+    eslint-plugin-cup "^2.0.1"
+    eslint-plugin-flowtype "^3.2.1"
+    eslint-plugin-import "^2.15.0"
+    eslint-plugin-jest "^22.1.3"
+    eslint-plugin-prettier "^3.0.1"
+    eslint-plugin-react "^7.12.4"
+    flow-bin "^0.91.0"
+    fusion-core "^1.10.2"
+    fusion-react "^1.3.7"
+    fusion-test-utils "^1.3.1"
+    fusion-tokens "^1.1.1"
+    gc-stats "^1.2.1"
+    nyc "^13.1.0"
+    prettier "^1.16.1"
+    react "^16.7.0"
+    tape-cup "^4.7.1"
+    unitest "^2.1.1"
+
 "@rush-temp/fusion-plugin-react-helmet-async@file:./projects/fusion-plugin-react-helmet-async.tgz":
   version "0.0.0"
   resolved "file:./projects/fusion-plugin-react-helmet-async.tgz"
@@ -976,7 +1028,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-plugin-universal-events "^1.3.0"
     fusion-react "^1.3.7"
     fusion-test-utils "^1.3.1"
     fusion-tokens "^1.1.1"
@@ -1007,7 +1058,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-plugin-universal-events "^1.3.0"
     fusion-test-utils "^1.3.1"
     fusion-tokens "^1.1.1"
     nyc "^13.1.0"
@@ -1049,7 +1099,7 @@
 
 "@rush-temp/fusion-plugin-universal-events-react@file:./projects/fusion-plugin-universal-events-react.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-universal-events-react.tgz#1bba95a7ea38e2d6d2c032528975317d4eedeafd"
+  resolved "file:./projects/fusion-plugin-universal-events-react.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     create-universal-package "^3.4.6"
@@ -1063,7 +1113,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-plugin-universal-events "^1.3.2"
     fusion-react "^1.3.7"
     fusion-test-utils "^1.3.1"
     fusion-tokens "^1.1.1"
@@ -1072,6 +1121,30 @@
     react "^16.7.0"
     react-dom "^16.7.0"
     tape-cup "^4.7.1"
+
+"@rush-temp/fusion-plugin-universal-events@file:./projects/fusion-plugin-universal-events.tgz":
+  version "0.0.0"
+  resolved "file:./projects/fusion-plugin-universal-events.tgz#d071331acb3c17f7ffb882e79ee57f001c59588c"
+  dependencies:
+    babel-eslint "^10.0.1"
+    create-universal-package "^3.4.6"
+    eslint "^5.12.1"
+    eslint-config-fusion "^4.0.0"
+    eslint-plugin-cup "^2.0.1"
+    eslint-plugin-flowtype "^3.2.1"
+    eslint-plugin-import "^2.15.0"
+    eslint-plugin-jest "^22.1.3"
+    eslint-plugin-prettier "^3.0.1"
+    eslint-plugin-react "^7.12.4"
+    flow-bin "^0.91.0"
+    fusion-core "^1.10.2"
+    fusion-test-utils "^1.3.1"
+    fusion-tokens "^1.1.1"
+    koa-bodyparser "4.2.1"
+    nyc "^13.1.0"
+    prettier "^1.16.1"
+    tape-cup "^4.7.1"
+    unitest "^2.1.1"
 
 "@rush-temp/fusion-plugin-universal-logger@file:./projects/fusion-plugin-universal-logger.tgz":
   version "0.0.0"
@@ -1089,7 +1162,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-plugin-universal-events "^1.3.0"
     fusion-test-utils "^1.3.1"
     fusion-tokens "^1.1.1"
     nyc "^13.1.0"
@@ -3572,6 +3644,13 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
+gc-stats@^1.2.1:
+  version "1.2.1"
+  resolved "https://unpm.uberinternal.com/gc-stats/-/gc-stats-1.2.1.tgz#f3e1bf7e28a385780db22a81681b064932e358da"
+  dependencies:
+    nan "^2.10.0"
+    node-pre-gyp "^0.11.0"
+
 generic-session@0.1.2:
   version "0.1.2"
   resolved "https://unpm.uberinternal.com/generic-session/-/generic-session-0.1.2.tgz#7f1301e41e7d374d14b0ab64c9260e7c9c1e3438"
@@ -5442,7 +5521,7 @@ mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://unpm.uberinternal.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
 
-nan@^2.9.2:
+nan@^2.10.0, nan@^2.9.2:
   version "2.12.1"
   resolved "https://unpm.uberinternal.com/nan/-/nan-2.12.1.tgz#7b1aa193e9aa86057e3c7bbd0ac448e770925552"
 
@@ -5584,6 +5663,21 @@ node-notifier@^5.2.1:
 node-pre-gyp@^0.10.0:
   version "0.10.3"
   resolved "https://unpm.uberinternal.com/node-pre-gyp/-/node-pre-gyp-0.10.3.tgz#3070040716afdc778747b61b6887bf78880b80fc"
+  dependencies:
+    detect-libc "^1.0.2"
+    mkdirp "^0.5.1"
+    needle "^2.2.1"
+    nopt "^4.0.1"
+    npm-packlist "^1.1.6"
+    npmlog "^4.0.2"
+    rc "^1.2.7"
+    rimraf "^2.6.1"
+    semver "^5.3.0"
+    tar "^4"
+
+node-pre-gyp@^0.11.0:
+  version "0.11.0"
+  resolved "https://unpm.uberinternal.com/node-pre-gyp/-/node-pre-gyp-0.11.0.tgz#db1f33215272f692cd38f03238e3e9b47c5dd054"
   dependencies:
     detect-libc "^1.0.2"
     mkdirp "^0.5.1"
@@ -6312,7 +6406,7 @@ react-lifecycles-compat@^3.0.0:
   version "3.0.4"
   resolved "https://unpm.uberinternal.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
-react-redux@5.1.1, react-redux@^5.1.1:
+react-redux@^5.1.1:
   version "5.1.1"
   resolved "https://unpm.uberinternal.com/react-redux/-/react-redux-5.1.1.tgz#88e368682c7fa80e34e055cd7ac56f5936b0f52f"
   dependencies:
