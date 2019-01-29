@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-universal-events",
+      "projectFolder": "public/fusion-plugin-universal-events"
+    },
+    {
       "packageName": "fusion-plugin-universal-events-react",
       "projectFolder": "public/fusion-plugin-universal-events-react"
     },
