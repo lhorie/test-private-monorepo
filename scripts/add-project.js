@@ -62,6 +62,7 @@ if (category && project) {
     upgrade(data, 'fusion-react');
     upgrade(data, 'fusion-test-utils');
     upgrade(data, 'fusion-tokens');
+    upgrade(data, 'koa-bodyparser');
     upgrade(data, 'nyc');
     upgrade(data, 'react');
     upgrade(data, 'react-dom');
