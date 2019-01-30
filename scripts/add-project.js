@@ -50,9 +50,11 @@ if (category && project) {
     }
 
     // upgrade deps
+    upgrade(data, '@babel/core');
     upgrade(data, '@babel/preset-react');
     upgrade(data, 'apollo-client');
     upgrade(data, 'babel-plugin-transform-flow-strip-types');
+    upgrade(data, 'babel-jest');
     upgrade(data, 'create-universal-package', '3.4.6');
     upgrade(data, 'enzyme');
     upgrade(data, 'enzyme-adapter-react-16');
@@ -65,6 +67,7 @@ if (category && project) {
     upgrade(data, 'fusion-react');
     upgrade(data, 'fusion-test-utils');
     upgrade(data, 'fusion-tokens');
+    upgrade(data, 'jest');
     upgrade(data, 'koa-bodyparser');
     upgrade(data, 'nyc');
     upgrade(data, 'prop-types');
@@ -131,7 +134,7 @@ if (category && project) {
   console.log(`- Building ${project}`);
   exec('rush build');
   console.log(`- Testing ${project}`);
-  exec('rush test -p 2');
+  exec('rush test');
   console.log(`- Linting ${project}`);
   exec('rush lint');
   console.log(`- Checking Flow on ${project}`);
