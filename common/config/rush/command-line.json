@@ -16,7 +16,7 @@
       "name": "test",
       "summary": "Run tests",
       "description": "Run tests",
-      "enableParallelism": true
+      "enableParallelism": false
     },
     {
       "commandKind": "bulk",

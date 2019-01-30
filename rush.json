@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-test-utils",
+      "projectFolder": "public/fusion-test-utils"
+    },
+    {
       "packageName": "fusion-react",
       "projectFolder": "public/fusion-react"
     },
