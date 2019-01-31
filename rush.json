@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-apollo-server",
+      "projectFolder": "public/fusion-plugin-apollo-server"
+    },
+    {
       "packageName": "fusion-tokens",
       "projectFolder": "public/fusion-tokens"
     },
