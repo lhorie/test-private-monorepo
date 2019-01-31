@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-tokens",
+      "projectFolder": "public/fusion-tokens"
+    },
+    {
       "packageName": "fusion-test-utils",
       "projectFolder": "public/fusion-test-utils"
     },

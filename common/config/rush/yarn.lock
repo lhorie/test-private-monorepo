@@ -38,7 +38,7 @@
   dependencies:
     "@babel/highlight" "7.0.0-beta.55"
 
-"@babel/core@^7.0.0-beta.55", "@babel/core@^7.1.6", "@babel/core@^7.2.0", "@babel/core@^7.2.2":
+"@babel/core@^7.0.0-beta.55", "@babel/core@^7.1.6", "@babel/core@^7.2.2":
   version "7.2.2"
   resolved "https://unpm.uberinternal.com/@babel%2fcore/-/core-7.2.2.tgz#07adba6dde27bb5ad8d8672f15fde3e08184a687"
   dependencies:
@@ -1342,7 +1342,6 @@
     fusion-cli "^1.13.1"
     fusion-core "^1.10.2"
     fusion-plugin-apollo-server "^1.2.0-1"
-    fusion-tokens "^1.1.1"
     graphql "^14.1.1"
     graphql-tag "^2.10.0"
     graphql-tools "^4.0.3"
@@ -1377,7 +1376,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     graphql "^14.1.1"
     graphql-tag "^2.10.0"
     graphql-tools "^4.0.3"
@@ -1406,7 +1404,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     nyc "^13.1.0"
     prettier "^1.16.1"
     tape-cup "^4.7.1"
@@ -1432,7 +1429,6 @@
     express "^4.16.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     generic-session "0.1.2"
     get-port "4.0.0"
     nyc "^13.1.0"
@@ -1510,7 +1506,6 @@
     flow-bin "^0.91.0"
     fusion-cli "^1.13.1"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     locale "^0.1.0"
     nyc "^13.1.0"
     prettier "^1.16.1"
@@ -1539,7 +1534,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     locale "^0.1.0"
     nyc "^13.1.0"
     prettier "^1.16.1"
@@ -1572,7 +1566,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     jest "^23.6.0"
     koa-bodyparser "^4.2.1"
     prettier "^1.16.1"
@@ -1595,7 +1588,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     jsonwebtoken "^8.4.0"
     just-safe-get "^1.3.0"
     just-safe-set "^2.1.0"
@@ -1623,7 +1615,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     gc-stats "^1.2.1"
     nyc "^13.1.0"
     prettier "^1.16.1"
@@ -1648,7 +1639,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     nyc "^13.1.0"
     prettier "^1.16.1"
     react "^16.7.0"
@@ -1704,7 +1694,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     history "^4.7.2"
     nyc "^13.1.0"
     prettier "^1.16.1"
@@ -1732,7 +1721,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     nyc "^13.1.0"
     prettier "^1.16.1"
     react "^16.7.0"
@@ -1759,7 +1747,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     just-map-object "^1.2.0"
     koa-bodyparser "^4.2.1"
     lodash.isequal "^4.5.0"
@@ -1816,7 +1803,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     nyc "^13.1.0"
     prettier "^1.16.1"
     react "^16.7.0"
@@ -1839,7 +1825,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     koa-bodyparser "^4.2.1"
     nyc "^13.1.0"
     prettier "^1.16.1"
@@ -1862,7 +1847,6 @@
     eslint-plugin-react "^7.12.4"
     flow-bin "^0.91.0"
     fusion-core "^1.10.2"
-    fusion-tokens "^1.1.1"
     nyc "^13.1.0"
     prettier "^1.16.1"
     tape-cup "^4.7.1"
@@ -1979,6 +1963,28 @@
     node-mocks-http "^1.6.6"
     nyc "^13.1.0"
     prettier "^1.16.1"
+    tape-cup "^4.7.1"
+    unitest "^2.1.1"
+
+"@rush-temp/fusion-tokens@file:./projects/fusion-tokens.tgz":
+  version "0.0.0"
+  resolved "file:./projects/fusion-tokens.tgz#3a54fde6dcc427ded2effe277c4398ecaf0187ba"
+  dependencies:
+    "@babel/plugin-transform-flow-strip-types" "7.2.3"
+    babel-eslint "^10.0.1"
+    create-universal-package "^3.4.6"
+    eslint "^5.12.1"
+    eslint-config-fusion "^4.0.0"
+    eslint-plugin-cup "^2.0.1"
+    eslint-plugin-flowtype "^3.2.1"
+    eslint-plugin-import "^2.16.0"
+    eslint-plugin-jest "^22.2.1"
+    eslint-plugin-prettier "^3.0.1"
+    eslint-plugin-react "^7.12.4"
+    flow-bin "^0.91.0"
+    fusion-core "^1.10.2"
+    nyc "^13.1.0"
+    prettier "^1.16.2"
     tape-cup "^4.7.1"
     unitest "^2.1.1"
 
@@ -2935,7 +2941,7 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-jest@23.6.0, babel-jest@^23.6.0:
+babel-jest@^23.6.0:
   version "23.6.0"
   resolved "https://unpm.uberinternal.com/babel-jest/-/babel-jest-23.6.0.tgz#a644232366557a2240a0c083da6b25786185a2f1"
   dependencies:
@@ -5246,6 +5252,10 @@ eslint-plugin-jest@^22.2.0:
     "@semantic-release/npm" "^5"
     "@semantic-release/release-notes-generator" "^7"
     semantic-release "15"
+
+eslint-plugin-jest@^22.2.1:
+  version "22.2.1"
+  resolved "https://unpm.uberinternal.com/eslint-plugin-jest/-/eslint-plugin-jest-22.2.1.tgz#371c6ae54855e59d74e44295777c0eec09ebc915"
 
 eslint-plugin-prettier@^3.0.1:
   version "3.0.1"
@@ -7622,7 +7632,7 @@ jest-worker@^23.2.0:
   dependencies:
     merge-stream "^1.0.1"
 
-jest@23.6.0, jest@^23.6.0:
+jest@^23.6.0:
   version "23.6.0"
   resolved "https://unpm.uberinternal.com/jest/-/jest-23.6.0.tgz#ad5835e923ebf6e19e7a1d7529a432edfee7813d"
   dependencies:
@@ -9901,6 +9911,10 @@ prettier-linter-helpers@^1.0.0:
 prettier@^1.16.1:
   version "1.16.1"
   resolved "https://unpm.uberinternal.com/prettier/-/prettier-1.16.1.tgz#534c2c9d7853f8845e5e078384e71973bd74089f"
+
+prettier@^1.16.2:
+  version "1.16.2"
+  resolved "https://unpm.uberinternal.com/prettier/-/prettier-1.16.2.tgz#f60bc5929a7f9a05260cc88d5430391100092414"
 
 pretty-format@^23.6.0:
   version "23.6.0"
