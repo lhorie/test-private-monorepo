@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-core",
+      "projectFolder": "public/fusion-core"
+    },
+    {
       "packageName": "fusion-plugin-apollo-server",
       "projectFolder": "public/fusion-plugin-apollo-server"
     },

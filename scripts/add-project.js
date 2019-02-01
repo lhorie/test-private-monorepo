@@ -63,6 +63,7 @@ if (category && project) {
     upgrade(data, 'eslint-plugin-import');
     upgrade(data, 'eslint-plugin-jest');
     upgrade(data, 'eslint-preset-cup');
+    upgrade(data, 'flow-bin');
     upgrade(data, 'fusion-apollo', '1.5.4');
     upgrade(data, 'fusion-core');
     upgrade(data, 'fusion-plugin-universal-events');
@@ -71,6 +72,7 @@ if (category && project) {
     upgrade(data, 'fusion-tokens');
     upgrade(data, 'jest');
     upgrade(data, 'koa-bodyparser');
+    upgrade(data, 'node-mocks-http');
     upgrade(data, 'nyc');
     upgrade(data, 'prettier');
     upgrade(data, 'prop-types');
