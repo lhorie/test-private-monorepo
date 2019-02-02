@@ -51,6 +51,7 @@ if (category && project) {
 
     // upgrade deps
     upgrade(data, '@babel/core');
+    upgrade(data, '@babel/preset-env');
     upgrade(data, '@babel/preset-react');
     upgrade(data, '@types/redux');
     upgrade(data, 'apollo-client');
@@ -59,6 +60,7 @@ if (category && project) {
     upgrade(data, 'create-universal-package', '3.4.6');
     upgrade(data, 'enzyme');
     upgrade(data, 'enzyme-adapter-react-16');
+    upgrade(data, 'eslint');
     upgrade(data, 'eslint-plugin-cup');
     upgrade(data, 'eslint-plugin-import');
     upgrade(data, 'eslint-plugin-jest');
@@ -66,21 +68,25 @@ if (category && project) {
     upgrade(data, 'flow-bin');
     upgrade(data, 'fusion-apollo', '1.5.4');
     upgrade(data, 'fusion-core');
+    upgrade(data, 'fusion-plugin-react-router');
     upgrade(data, 'fusion-plugin-universal-events');
     upgrade(data, 'fusion-react');
     upgrade(data, 'fusion-test-utils');
     upgrade(data, 'fusion-tokens');
+    upgrade(data, 'get-port');
     upgrade(data, 'jest');
     upgrade(data, 'koa-bodyparser');
     upgrade(data, 'node-mocks-http');
     upgrade(data, 'nyc');
     upgrade(data, 'prettier');
     upgrade(data, 'prop-types');
+    upgrade(data, 'puppeteer');
     upgrade(data, 'react');
     upgrade(data, 'react-apollo');
     upgrade(data, 'react-dom');
     upgrade(data, 'react-redux', '5.1.1');
     upgrade(data, 'redux');
+    upgrade(data, 'tape');
     upgrade(data, 'tape-cup');
     upgrade(data, 'unitest');
 

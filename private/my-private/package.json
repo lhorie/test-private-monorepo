@@ -2,7 +2,9 @@
   "name": "my-private",
   "version": "0.0.1",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "mkdir -p dist && cp src/index.js dist/",
     "flow": "flow check",
@@ -10,7 +12,7 @@
     "test": "echo ok"
   },
   "dependencies": {
-    "my-public": "0.0.1"
+    "my-public": "^0.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
