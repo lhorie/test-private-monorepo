@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-rpc-redux-react",
+      "projectFolder": "public/fusion-plugin-rpc-redux-react"
+    },
+    {
       "packageName": "fusion-cli",
       "projectFolder": "public/fusion-cli"
     },
