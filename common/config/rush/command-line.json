@@ -26,11 +26,11 @@
       "enableParallelism": true
     },
     {
-      "commandKind": "bulk",
+      "commandKind": "global",
       "name": "flow",
       "summary": "Check types",
       "description": "Check types",
-      "enableParallelism": true
+      "shellCommand": "common/temp/node_modules/.bin/flow check"
     },
     // {
     //   /**
