@@ -36,5 +36,8 @@
   "scripts": {
     "git": "run() {\n cd public; git \"$@\"; cd ..; git \"$@\"; \n}\n run",
     "commit": "run() {\ncd public; git add .; git commit \"$@\"; cd ..; git add .; git commit \"$@\"; \n}\n run"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.91.0"
   }
 }
