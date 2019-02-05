@@ -38,7 +38,7 @@
   dependencies:
     "@babel/highlight" "7.0.0-beta.55"
 
-"@babel/core@^7.0.0-beta.55", "@babel/core@^7.1.6", "@babel/core@^7.2.2":
+"@babel/core@^7.0.0-beta.55", "@babel/core@^7.1.0", "@babel/core@^7.1.6", "@babel/core@^7.2.2":
   version "7.2.2"
   resolved "https://unpm.uberinternal.com/@babel%2fcore/-/core-7.2.2.tgz#07adba6dde27bb5ad8d8672f15fde3e08184a687"
   dependencies:
@@ -581,7 +581,7 @@
   version "7.0.0-beta.31"
   resolved "https://unpm.uberinternal.com/@babel%2fplugin-syntax-object-rest-spread/-/plugin-syntax-object-rest-spread-7.0.0-beta.31.tgz#bd0f67210b3022182dc50d155393ccec720ca039"
 
-"@babel/plugin-syntax-object-rest-spread@^7.2.0":
+"@babel/plugin-syntax-object-rest-spread@^7.0.0", "@babel/plugin-syntax-object-rest-spread@^7.2.0":
   version "7.2.0"
   resolved "https://unpm.uberinternal.com/@babel%2fplugin-syntax-object-rest-spread/-/plugin-syntax-object-rest-spread-7.2.0.tgz#3b7a3e733510c57e820b9142a6579ac8b0dfad2e"
   dependencies:
@@ -2872,6 +2872,15 @@ babel-jest@^23.6.0:
     babel-plugin-istanbul "^4.1.6"
     babel-preset-jest "^23.2.0"
 
+babel-jest@^24.0.0, babel-jest@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/babel-jest/-/babel-jest-24.1.0.tgz#441e23ef75ded3bd547e300ac3194cef87b55190"
+  dependencies:
+    babel-plugin-istanbul "^5.1.0"
+    babel-preset-jest "^24.1.0"
+    chalk "^2.4.2"
+    slash "^2.0.0"
+
 babel-messages@^6.23.0:
   version "6.23.0"
   resolved "https://unpm.uberinternal.com/babel-messages/-/babel-messages-6.23.0.tgz#f3cdf4703858035b2a2951c6ec5edf6c62f2630e"
@@ -2899,7 +2908,7 @@ babel-plugin-istanbul@^4.1.6:
     istanbul-lib-instrument "^1.10.1"
     test-exclude "^4.2.1"
 
-babel-plugin-istanbul@^5.0.1:
+babel-plugin-istanbul@^5.0.1, babel-plugin-istanbul@^5.1.0:
   version "5.1.0"
   resolved "https://unpm.uberinternal.com/babel-plugin-istanbul/-/babel-plugin-istanbul-5.1.0.tgz#6892f529eff65a3e2d33d87dc5888ffa2ecd4a30"
   dependencies:
@@ -2910,6 +2919,10 @@ babel-plugin-istanbul@^5.0.1:
 babel-plugin-jest-hoist@^23.2.0:
   version "23.2.0"
   resolved "https://unpm.uberinternal.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-23.2.0.tgz#e61fae05a1ca8801aadee57a6d66b8cefaf44167"
+
+babel-plugin-jest-hoist@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-24.1.0.tgz#dfecc491fb15e2668abbd690a697a8fd1411a7f8"
 
 babel-plugin-syntax-flow@^6.18.0:
   version "6.18.0"
@@ -3184,6 +3197,13 @@ babel-preset-jest@23.2.0, babel-preset-jest@^23.2.0:
   dependencies:
     babel-plugin-jest-hoist "^23.2.0"
     babel-plugin-syntax-object-rest-spread "^6.13.0"
+
+babel-preset-jest@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/babel-preset-jest/-/babel-preset-jest-24.1.0.tgz#83bc564fdcd4903641af65ec63f2f5de6b04132e"
+  dependencies:
+    "@babel/plugin-syntax-object-rest-spread" "^7.0.0"
+    babel-plugin-jest-hoist "^24.1.0"
 
 babel-preset-react@6.24.1:
   version "6.24.1"
@@ -3565,14 +3585,14 @@ cache-content-type@^1.0.0:
     mime-types "^2.1.18"
     ylru "^1.2.0"
 
-caching-transform@^2.0.0:
-  version "2.0.0"
-  resolved "https://unpm.uberinternal.com/caching-transform/-/caching-transform-2.0.0.tgz#e1292bd92d35b6e8b1ed7075726724b3bd64eea0"
+caching-transform@^3.0.1:
+  version "3.0.1"
+  resolved "https://unpm.uberinternal.com/caching-transform/-/caching-transform-3.0.1.tgz#1df89e850803ad15f68dafb2abe9a8b866016c7d"
   dependencies:
-    make-dir "^1.0.0"
-    md5-hex "^2.0.0"
-    package-hash "^2.0.0"
-    write-file-atomic "^2.0.0"
+    hasha "^3.0.0"
+    make-dir "^1.3.0"
+    package-hash "^3.0.0"
+    write-file-atomic "^2.3.0"
 
 call-me-maybe@^1.0.1:
   version "1.0.1"
@@ -3603,8 +3623,8 @@ camelcase@^4.1.0:
   resolved "https://unpm.uberinternal.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
 caniuse-lite@^1.0.30000792, caniuse-lite@^1.0.30000884, caniuse-lite@^1.0.30000929:
-  version "1.0.30000934"
-  resolved "https://unpm.uberinternal.com/caniuse-lite/-/caniuse-lite-1.0.30000934.tgz#4f2d749f51e9e2d4e9b182f8f121d26ec4208e8d"
+  version "1.0.30000935"
+  resolved "https://unpm.uberinternal.com/caniuse-lite/-/caniuse-lite-1.0.30000935.tgz#d1b59df00b46f4921bb84a8a34c1d172b346df59"
 
 capture-exit@^1.2.0:
   version "1.2.0"
@@ -3735,6 +3755,10 @@ chrome-trace-event@^1.0.0:
 ci-info@^1.5.0:
   version "1.6.0"
   resolved "https://unpm.uberinternal.com/ci-info/-/ci-info-1.6.0.tgz#2ca20dbb9ceb32d4524a683303313f0304b1e497"
+
+ci-info@^2.0.0:
+  version "2.0.0"
+  resolved "https://unpm.uberinternal.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
 
 cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
   version "1.0.4"
@@ -4188,8 +4212,8 @@ csso@^3.5.0:
     css-tree "1.0.0-alpha.29"
 
 cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
-  version "0.3.4"
-  resolved "https://unpm.uberinternal.com/cssom/-/cssom-0.3.4.tgz#8cd52e8a3acfd68d3aed38ee0a640177d2f9d797"
+  version "0.3.6"
+  resolved "https://unpm.uberinternal.com/cssom/-/cssom-0.3.6.tgz#f85206cee04efa841f3c5982a74ba96ab20d65ad"
 
 cssstyle@^1.0.0:
   version "1.1.1"
@@ -4225,10 +4249,6 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://unpm.uberinternal.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
-debug-log@^1.0.1:
-  version "1.0.1"
-  resolved "https://unpm.uberinternal.com/debug-log/-/debug-log-1.0.1.tgz#2307632d4c04382b8df8a32f70b895046d52745f"
-
 debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.6, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
   resolved "https://unpm.uberinternal.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -4247,7 +4267,7 @@ debug@^3.0.1, debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.0.1, debug@^4.1.0:
+debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   version "4.1.1"
   resolved "https://unpm.uberinternal.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
   dependencies:
@@ -4375,6 +4395,10 @@ diagnostics@^1.1.1:
     colorspace "1.1.x"
     enabled "1.0.x"
     kuler "1.0.x"
+
+diff-sequences@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/diff-sequences/-/diff-sequences-24.0.0.tgz#cdf8e27ed20d8b8d3caccb4e0c0d8fe31a173013"
 
 diff@^3.2.0, diff@^3.5.0:
   version "3.5.0"
@@ -4565,8 +4589,8 @@ env-variable@0.0.x:
   resolved "https://unpm.uberinternal.com/env-variable/-/env-variable-0.0.5.tgz#913dd830bef11e96a039c038d4130604eba37f88"
 
 enzyme-adapter-react-16@^1.7.0, enzyme-adapter-react-16@^1.8.0:
-  version "1.8.0"
-  resolved "https://unpm.uberinternal.com/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.8.0.tgz#7055d8e908d8d27b807cf4292244db3c815ca11d"
+  version "1.9.0"
+  resolved "https://unpm.uberinternal.com/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.9.0.tgz#b3bc951cb90d619ead85b49760300be1bbaced80"
   dependencies:
     enzyme-adapter-utils "^1.10.0"
     function.prototype.name "^1.1.0"
@@ -5089,6 +5113,16 @@ expect@^23.6.0:
     jest-message-util "^23.4.0"
     jest-regex-util "^23.3.0"
 
+expect@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/expect/-/expect-24.1.0.tgz#88e73301c4c785cde5f16da130ab407bdaf8c0f2"
+  dependencies:
+    ansi-styles "^3.2.0"
+    jest-get-type "^24.0.0"
+    jest-matcher-utils "^24.0.0"
+    jest-message-util "^24.0.0"
+    jest-regex-util "^24.0.0"
+
 express@^4.16.2, express@^4.16.4:
   version "4.16.4"
   resolved "https://unpm.uberinternal.com/express/-/express-4.16.4.tgz#fddef61926109e24c515ea97fd2f1bdbf62df12e"
@@ -5513,8 +5547,8 @@ functional-red-black-tree@^1.0.1:
   resolved "https://unpm.uberinternal.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
 
 fusion-cli@^1.13.1:
-  version "1.15.1"
-  resolved "https://unpm.uberinternal.com/fusion-cli/-/fusion-cli-1.15.1.tgz#32155c5bc2c7914f069180d056c278c834ca8760"
+  version "1.16.0"
+  resolved "https://unpm.uberinternal.com/fusion-cli/-/fusion-cli-1.16.0.tgz#aa7641e0dc433f2e265a04ce4aeab64b86a264cc"
   dependencies:
     "@babel/core" "^7.1.6"
     "@babel/plugin-syntax-dynamic-import" "7.2.0"
@@ -5525,7 +5559,7 @@ fusion-cli@^1.13.1:
     "@gfx/zopfli" "^1.0.10"
     "@rtsao/plugin-proposal-class-properties" "7.0.1-patch.1"
     babel-core "^7.0.0-bridge.0"
-    babel-jest "^23.6.0"
+    babel-jest "^24.0.0"
     babel-plugin-dynamic-import-node "^2.2.0"
     babel-plugin-transform-cup-globals "^1.0.1"
     bundle-analyzer "^0.0.6"
@@ -5535,13 +5569,14 @@ fusion-cli@^1.13.1:
     enzyme-adapter-react-16 "^1.7.0"
     enzyme-to-json "^3.3.4"
     get-port "^4.0.0"
+    graphql-tag "^2.10.1"
     http-proxy "^1.17.0"
     iltorb "^2.4.1"
     imagemin "^6.0.0"
     imagemin-svgo "^7.0.0"
     istanbul-api "^2.0.6"
     istanbul-lib-coverage "^2.0.1"
-    jest "^23.6.0"
+    jest "^24.0.0"
     jest-environment-jsdom-global "^1.1.0"
     just-snake-case "^1.1.0"
     koa-mount "^4.0.0"
@@ -5767,7 +5802,7 @@ graphql-extensions@^0.0.x, graphql-extensions@~0.0.9:
     core-js "^2.5.3"
     source-map-support "^0.5.1"
 
-graphql-tag@^2.10.0:
+graphql-tag@^2.10.0, graphql-tag@^2.10.1:
   version "2.10.1"
   resolved "https://unpm.uberinternal.com/graphql-tag/-/graphql-tag-2.10.1.tgz#10aa41f1cd8fae5373eaf11f1f67260a3cad5e02"
 
@@ -5907,6 +5942,12 @@ hash.js@^1.0.0, hash.js@^1.0.3:
   dependencies:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
+
+hasha@^3.0.0:
+  version "3.0.0"
+  resolved "https://unpm.uberinternal.com/hasha/-/hasha-3.0.0.tgz#52a32fab8569d41ca69a61ff1a214f8eb7c8bd39"
+  dependencies:
+    is-stream "^1.0.1"
 
 highland@^2.5.1:
   version "2.13.0"
@@ -6136,6 +6177,13 @@ import-local@^1.0.0:
     pkg-dir "^2.0.0"
     resolve-cwd "^2.0.0"
 
+import-local@^2.0.0:
+  version "2.0.0"
+  resolved "https://unpm.uberinternal.com/import-local/-/import-local-2.0.0.tgz#55070be38a5993cf18ef6db7e961f5bee5c5a09d"
+  dependencies:
+    pkg-dir "^3.0.0"
+    resolve-cwd "^2.0.0"
+
 imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://unpm.uberinternal.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
@@ -6228,9 +6276,9 @@ invert-kv@^2.0.0:
   version "2.0.0"
   resolved "https://unpm.uberinternal.com/invert-kv/-/invert-kv-2.0.0.tgz#7393f5afa59ec9ff5f67a27620d11c226e3eec02"
 
-ip-regex@^3.0.0:
-  version "3.0.0"
-  resolved "https://unpm.uberinternal.com/ip-regex/-/ip-regex-3.0.0.tgz#0a934694b4066558c46294244a23cc33116bf732"
+ip-regex@^2.1.0:
+  version "2.1.0"
+  resolved "https://unpm.uberinternal.com/ip-regex/-/ip-regex-2.1.0.tgz#fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
 
 ipaddr.js@1.8.0:
   version "1.8.0"
@@ -6285,6 +6333,12 @@ is-ci@^1.0.10:
   resolved "https://unpm.uberinternal.com/is-ci/-/is-ci-1.2.1.tgz#e3779c8ee17fccf428488f6e281187f2e632841c"
   dependencies:
     ci-info "^1.5.0"
+
+is-ci@^2.0.0:
+  version "2.0.0"
+  resolved "https://unpm.uberinternal.com/is-ci/-/is-ci-2.0.0.tgz#6bc6334181810e04b5c22b3d589fdca55026404c"
+  dependencies:
+    ci-info "^2.0.0"
 
 is-data-descriptor@^0.1.4:
   version "0.1.4"
@@ -6369,6 +6423,10 @@ is-fullwidth-code-point@^2.0.0:
 is-generator-fn@^1.0.0:
   version "1.0.0"
   resolved "https://unpm.uberinternal.com/is-generator-fn/-/is-generator-fn-1.0.0.tgz#969d49e1bb3329f6bb7f09089be26578b2ddd46a"
+
+is-generator-fn@^2.0.0:
+  version "2.0.0"
+  resolved "https://unpm.uberinternal.com/is-generator-fn/-/is-generator-fn-2.0.0.tgz#038c31b774709641bda678b1f06a4e3227c10b3e"
 
 is-generator-function@^1.0.7:
   version "1.0.7"
@@ -6545,30 +6603,31 @@ istanbul-api@^1.3.1:
     mkdirp "^0.5.1"
     once "^1.4.0"
 
-istanbul-api@^2.0.6:
-  version "2.0.6"
-  resolved "https://unpm.uberinternal.com/istanbul-api/-/istanbul-api-2.0.6.tgz#cd7b33ee678f6c01531d05f5e567ebbcd25f8ecc"
+istanbul-api@^2.0.6, istanbul-api@^2.0.8:
+  version "2.1.0"
+  resolved "https://unpm.uberinternal.com/istanbul-api/-/istanbul-api-2.1.0.tgz#37ab0c2c3e83065462f5254b94749d6157846c4e"
   dependencies:
     async "^2.6.1"
     compare-versions "^3.2.1"
     fileset "^2.0.3"
-    istanbul-lib-coverage "^2.0.1"
-    istanbul-lib-hook "^2.0.1"
-    istanbul-lib-instrument "^3.0.0"
-    istanbul-lib-report "^2.0.2"
-    istanbul-lib-source-maps "^2.0.1"
-    istanbul-reports "^2.0.1"
+    istanbul-lib-coverage "^2.0.3"
+    istanbul-lib-hook "^2.0.3"
+    istanbul-lib-instrument "^3.1.0"
+    istanbul-lib-report "^2.0.4"
+    istanbul-lib-source-maps "^3.0.2"
+    istanbul-reports "^2.1.0"
     js-yaml "^3.12.0"
     make-dir "^1.3.0"
+    minimatch "^3.0.4"
     once "^1.4.0"
 
 istanbul-lib-coverage@^1.1.1, istanbul-lib-coverage@^1.2.0, istanbul-lib-coverage@^1.2.1:
   version "1.2.1"
   resolved "https://unpm.uberinternal.com/istanbul-lib-coverage/-/istanbul-lib-coverage-1.2.1.tgz#ccf7edcd0a0bb9b8f729feeb0930470f9af664f0"
 
-istanbul-lib-coverage@^2.0.1:
-  version "2.0.1"
-  resolved "https://unpm.uberinternal.com/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.1.tgz#2aee0e073ad8c5f6a0b00e0dfbf52b4667472eda"
+istanbul-lib-coverage@^2.0.1, istanbul-lib-coverage@^2.0.2, istanbul-lib-coverage@^2.0.3:
+  version "2.0.3"
+  resolved "https://unpm.uberinternal.com/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.3.tgz#0b891e5ad42312c2b9488554f603795f9a2211ba"
 
 istanbul-lib-hook@^1.2.2:
   version "1.2.2"
@@ -6576,9 +6635,9 @@ istanbul-lib-hook@^1.2.2:
   dependencies:
     append-transform "^0.4.0"
 
-istanbul-lib-hook@^2.0.1:
-  version "2.0.1"
-  resolved "https://unpm.uberinternal.com/istanbul-lib-hook/-/istanbul-lib-hook-2.0.1.tgz#918a57b75a0f951d552a08487ca1fa5336433d72"
+istanbul-lib-hook@^2.0.3:
+  version "2.0.3"
+  resolved "https://unpm.uberinternal.com/istanbul-lib-hook/-/istanbul-lib-hook-2.0.3.tgz#e0e581e461c611be5d0e5ef31c5f0109759916fb"
   dependencies:
     append-transform "^1.0.0"
 
@@ -6594,16 +6653,16 @@ istanbul-lib-instrument@^1.10.1, istanbul-lib-instrument@^1.10.2:
     istanbul-lib-coverage "^1.2.1"
     semver "^5.3.0"
 
-istanbul-lib-instrument@^3.0.0:
-  version "3.0.0"
-  resolved "https://unpm.uberinternal.com/istanbul-lib-instrument/-/istanbul-lib-instrument-3.0.0.tgz#b5f066b2a161f75788be17a9d556f40a0cf2afc9"
+istanbul-lib-instrument@^3.0.0, istanbul-lib-instrument@^3.0.1, istanbul-lib-instrument@^3.1.0:
+  version "3.1.0"
+  resolved "https://unpm.uberinternal.com/istanbul-lib-instrument/-/istanbul-lib-instrument-3.1.0.tgz#a2b5484a7d445f1f311e93190813fa56dfb62971"
   dependencies:
     "@babel/generator" "^7.0.0"
     "@babel/parser" "^7.0.0"
     "@babel/template" "^7.0.0"
     "@babel/traverse" "^7.0.0"
     "@babel/types" "^7.0.0"
-    istanbul-lib-coverage "^2.0.1"
+    istanbul-lib-coverage "^2.0.3"
     semver "^5.5.0"
 
 istanbul-lib-report@^1.1.5:
@@ -6615,13 +6674,13 @@ istanbul-lib-report@^1.1.5:
     path-parse "^1.0.5"
     supports-color "^3.1.2"
 
-istanbul-lib-report@^2.0.2:
-  version "2.0.2"
-  resolved "https://unpm.uberinternal.com/istanbul-lib-report/-/istanbul-lib-report-2.0.2.tgz#430a2598519113e1da7af274ba861bd42dd97535"
+istanbul-lib-report@^2.0.4:
+  version "2.0.4"
+  resolved "https://unpm.uberinternal.com/istanbul-lib-report/-/istanbul-lib-report-2.0.4.tgz#bfd324ee0c04f59119cb4f07dab157d09f24d7e4"
   dependencies:
-    istanbul-lib-coverage "^2.0.1"
+    istanbul-lib-coverage "^2.0.3"
     make-dir "^1.3.0"
-    supports-color "^5.4.0"
+    supports-color "^6.0.0"
 
 istanbul-lib-source-maps@^1.2.4, istanbul-lib-source-maps@^1.2.6:
   version "1.2.6"
@@ -6633,12 +6692,12 @@ istanbul-lib-source-maps@^1.2.4, istanbul-lib-source-maps@^1.2.6:
     rimraf "^2.6.1"
     source-map "^0.5.3"
 
-istanbul-lib-source-maps@^2.0.1:
-  version "2.0.1"
-  resolved "https://unpm.uberinternal.com/istanbul-lib-source-maps/-/istanbul-lib-source-maps-2.0.1.tgz#ce8b45131d8293fdeaa732f4faf1852d13d0a97e"
+istanbul-lib-source-maps@^3.0.1, istanbul-lib-source-maps@^3.0.2:
+  version "3.0.2"
+  resolved "https://unpm.uberinternal.com/istanbul-lib-source-maps/-/istanbul-lib-source-maps-3.0.2.tgz#f1e817229a9146e8424a28e5d69ba220fda34156"
   dependencies:
-    debug "^3.1.0"
-    istanbul-lib-coverage "^2.0.1"
+    debug "^4.1.1"
+    istanbul-lib-coverage "^2.0.3"
     make-dir "^1.3.0"
     rimraf "^2.6.2"
     source-map "^0.6.1"
@@ -6649,9 +6708,9 @@ istanbul-reports@^1.5.1:
   dependencies:
     handlebars "^4.0.3"
 
-istanbul-reports@^2.0.1:
-  version "2.0.1"
-  resolved "https://unpm.uberinternal.com/istanbul-reports/-/istanbul-reports-2.0.1.tgz#fb8d6ea850701a3984350b977a969e9a556116a7"
+istanbul-reports@^2.1.0:
+  version "2.1.0"
+  resolved "https://unpm.uberinternal.com/istanbul-reports/-/istanbul-reports-2.1.0.tgz#87b8b55cd1901ba1748964c98ddd8900ce306d59"
   dependencies:
     handlebars "^4.0.11"
 
@@ -6663,6 +6722,13 @@ jest-changed-files@^23.4.2:
   version "23.4.2"
   resolved "https://unpm.uberinternal.com/jest-changed-files/-/jest-changed-files-23.4.2.tgz#1eed688370cd5eebafe4ae93d34bb3b64968fe83"
   dependencies:
+    throat "^4.0.0"
+
+jest-changed-files@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-changed-files/-/jest-changed-files-24.0.0.tgz#c02c09a8cc9ca93f513166bc773741bd39898ff7"
+  dependencies:
+    execa "^1.0.0"
     throat "^4.0.0"
 
 jest-cli@23.6.0, jest-cli@^23.6.0:
@@ -6706,6 +6772,49 @@ jest-cli@23.6.0, jest-cli@^23.6.0:
     which "^1.2.12"
     yargs "^11.0.0"
 
+jest-cli@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/jest-cli/-/jest-cli-24.1.0.tgz#f7cc98995f36e7210cce3cbb12974cbf60940843"
+  dependencies:
+    ansi-escapes "^3.0.0"
+    chalk "^2.0.1"
+    exit "^0.1.2"
+    glob "^7.1.2"
+    graceful-fs "^4.1.15"
+    import-local "^2.0.0"
+    is-ci "^2.0.0"
+    istanbul-api "^2.0.8"
+    istanbul-lib-coverage "^2.0.2"
+    istanbul-lib-instrument "^3.0.1"
+    istanbul-lib-source-maps "^3.0.1"
+    jest-changed-files "^24.0.0"
+    jest-config "^24.1.0"
+    jest-environment-jsdom "^24.0.0"
+    jest-get-type "^24.0.0"
+    jest-haste-map "^24.0.0"
+    jest-message-util "^24.0.0"
+    jest-regex-util "^24.0.0"
+    jest-resolve-dependencies "^24.1.0"
+    jest-runner "^24.1.0"
+    jest-runtime "^24.1.0"
+    jest-snapshot "^24.1.0"
+    jest-util "^24.0.0"
+    jest-validate "^24.0.0"
+    jest-watcher "^24.0.0"
+    jest-worker "^24.0.0"
+    micromatch "^3.1.10"
+    node-notifier "^5.2.1"
+    p-each-series "^1.0.0"
+    pirates "^4.0.0"
+    prompts "^2.0.1"
+    realpath-native "^1.0.0"
+    rimraf "^2.5.4"
+    slash "^2.0.0"
+    string-length "^2.0.0"
+    strip-ansi "^5.0.0"
+    which "^1.2.12"
+    yargs "^12.0.2"
+
 jest-config@^23.6.0:
   version "23.6.0"
   resolved "https://unpm.uberinternal.com/jest-config/-/jest-config-23.6.0.tgz#f82546a90ade2d8c7026fbf6ac5207fc22f8eb1d"
@@ -6725,6 +6834,26 @@ jest-config@^23.6.0:
     micromatch "^2.3.11"
     pretty-format "^23.6.0"
 
+jest-config@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/jest-config/-/jest-config-24.1.0.tgz#6ea6881cfdd299bc86cc144ee36d937c97c3850c"
+  dependencies:
+    "@babel/core" "^7.1.0"
+    babel-jest "^24.1.0"
+    chalk "^2.0.1"
+    glob "^7.1.1"
+    jest-environment-jsdom "^24.0.0"
+    jest-environment-node "^24.0.0"
+    jest-get-type "^24.0.0"
+    jest-jasmine2 "^24.1.0"
+    jest-regex-util "^24.0.0"
+    jest-resolve "^24.1.0"
+    jest-util "^24.0.0"
+    jest-validate "^24.0.0"
+    micromatch "^3.1.10"
+    pretty-format "^24.0.0"
+    realpath-native "^1.0.2"
+
 jest-diff@^23.6.0:
   version "23.6.0"
   resolved "https://unpm.uberinternal.com/jest-diff/-/jest-diff-23.6.0.tgz#1500f3f16e850bb3d71233408089be099f610c7d"
@@ -6734,9 +6863,24 @@ jest-diff@^23.6.0:
     jest-get-type "^22.1.0"
     pretty-format "^23.6.0"
 
+jest-diff@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-diff/-/jest-diff-24.0.0.tgz#a3e5f573dbac482f7d9513ac9cfa21644d3d6b34"
+  dependencies:
+    chalk "^2.0.1"
+    diff-sequences "^24.0.0"
+    jest-get-type "^24.0.0"
+    pretty-format "^24.0.0"
+
 jest-docblock@^23.2.0:
   version "23.2.0"
   resolved "https://unpm.uberinternal.com/jest-docblock/-/jest-docblock-23.2.0.tgz#f085e1f18548d99fdd69b20207e6fd55d91383a7"
+  dependencies:
+    detect-newline "^2.1.0"
+
+jest-docblock@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-docblock/-/jest-docblock-24.0.0.tgz#54d77a188743e37f62181a91a01eb9222289f94e"
   dependencies:
     detect-newline "^2.1.0"
 
@@ -6746,6 +6890,15 @@ jest-each@^23.6.0:
   dependencies:
     chalk "^2.0.1"
     pretty-format "^23.6.0"
+
+jest-each@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-each/-/jest-each-24.0.0.tgz#10987a06b21c7ffbfb7706c89d24c52ed864be55"
+  dependencies:
+    chalk "^2.0.1"
+    jest-get-type "^24.0.0"
+    jest-util "^24.0.0"
+    pretty-format "^24.0.0"
 
 jest-environment-jsdom-global@^1.1.0:
   version "1.1.0"
@@ -6759,6 +6912,14 @@ jest-environment-jsdom@^23.4.0:
     jest-util "^23.4.0"
     jsdom "^11.5.1"
 
+jest-environment-jsdom@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-environment-jsdom/-/jest-environment-jsdom-24.0.0.tgz#5affa0654d6e44cd798003daa1a8701dbd6e4d11"
+  dependencies:
+    jest-mock "^24.0.0"
+    jest-util "^24.0.0"
+    jsdom "^11.5.1"
+
 jest-environment-node@^23.4.0:
   version "23.4.0"
   resolved "https://unpm.uberinternal.com/jest-environment-node/-/jest-environment-node-23.4.0.tgz#57e80ed0841dea303167cce8cd79521debafde10"
@@ -6766,9 +6927,20 @@ jest-environment-node@^23.4.0:
     jest-mock "^23.2.0"
     jest-util "^23.4.0"
 
+jest-environment-node@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-environment-node/-/jest-environment-node-24.0.0.tgz#330948980656ed8773ce2e04eb597ed91e3c7190"
+  dependencies:
+    jest-mock "^24.0.0"
+    jest-util "^24.0.0"
+
 jest-get-type@^22.1.0:
   version "22.4.3"
   resolved "https://unpm.uberinternal.com/jest-get-type/-/jest-get-type-22.4.3.tgz#e3a8504d8479342dd4420236b322869f18900ce4"
+
+jest-get-type@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-get-type/-/jest-get-type-24.0.0.tgz#36e72930b78e33da59a4f63d44d332188278940b"
 
 jest-haste-map@^23.6.0:
   version "23.6.0"
@@ -6782,6 +6954,19 @@ jest-haste-map@^23.6.0:
     jest-worker "^23.2.0"
     micromatch "^2.3.11"
     sane "^2.0.0"
+
+jest-haste-map@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-haste-map/-/jest-haste-map-24.0.0.tgz#e9ef51b2c9257384b4d6beb83bd48c65b37b5e6e"
+  dependencies:
+    fb-watchman "^2.0.0"
+    graceful-fs "^4.1.15"
+    invariant "^2.2.4"
+    jest-serializer "^24.0.0"
+    jest-util "^24.0.0"
+    jest-worker "^24.0.0"
+    micromatch "^3.1.10"
+    sane "^3.0.0"
 
 jest-jasmine2@^23.6.0:
   version "23.6.0"
@@ -6800,11 +6985,34 @@ jest-jasmine2@^23.6.0:
     jest-util "^23.4.0"
     pretty-format "^23.6.0"
 
+jest-jasmine2@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/jest-jasmine2/-/jest-jasmine2-24.1.0.tgz#8377324b967037c440f0a549ee0bbd9912055db6"
+  dependencies:
+    "@babel/traverse" "^7.1.0"
+    chalk "^2.0.1"
+    co "^4.6.0"
+    expect "^24.1.0"
+    is-generator-fn "^2.0.0"
+    jest-each "^24.0.0"
+    jest-matcher-utils "^24.0.0"
+    jest-message-util "^24.0.0"
+    jest-snapshot "^24.1.0"
+    jest-util "^24.0.0"
+    pretty-format "^24.0.0"
+    throat "^4.0.0"
+
 jest-leak-detector@^23.6.0:
   version "23.6.0"
   resolved "https://unpm.uberinternal.com/jest-leak-detector/-/jest-leak-detector-23.6.0.tgz#e4230fd42cf381a1a1971237ad56897de7e171de"
   dependencies:
     pretty-format "^23.6.0"
+
+jest-leak-detector@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-leak-detector/-/jest-leak-detector-24.0.0.tgz#78280119fd05ee98317daee62cddb3aa537a31c6"
+  dependencies:
+    pretty-format "^24.0.0"
 
 jest-matcher-utils@^23.6.0:
   version "23.6.0"
@@ -6813,6 +7021,15 @@ jest-matcher-utils@^23.6.0:
     chalk "^2.0.1"
     jest-get-type "^22.1.0"
     pretty-format "^23.6.0"
+
+jest-matcher-utils@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-matcher-utils/-/jest-matcher-utils-24.0.0.tgz#fc9c41cfc49b2c3ec14e576f53d519c37729d579"
+  dependencies:
+    chalk "^2.0.1"
+    jest-diff "^24.0.0"
+    jest-get-type "^24.0.0"
+    pretty-format "^24.0.0"
 
 jest-message-util@^23.4.0:
   version "23.4.0"
@@ -6824,13 +7041,31 @@ jest-message-util@^23.4.0:
     slash "^1.0.0"
     stack-utils "^1.0.1"
 
+jest-message-util@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-message-util/-/jest-message-util-24.0.0.tgz#a07a141433b2c992dbaec68d4cbfe470ba289619"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    chalk "^2.0.1"
+    micromatch "^3.1.10"
+    slash "^2.0.0"
+    stack-utils "^1.0.1"
+
 jest-mock@^23.2.0:
   version "23.2.0"
   resolved "https://unpm.uberinternal.com/jest-mock/-/jest-mock-23.2.0.tgz#ad1c60f29e8719d47c26e1138098b6d18b261134"
 
+jest-mock@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-mock/-/jest-mock-24.0.0.tgz#9a4b53e01d66a0e780f7d857462d063e024c617d"
+
 jest-regex-util@^23.3.0:
   version "23.3.0"
   resolved "https://unpm.uberinternal.com/jest-regex-util/-/jest-regex-util-23.3.0.tgz#5f86729547c2785c4002ceaa8f849fe8ca471bc5"
+
+jest-regex-util@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-regex-util/-/jest-regex-util-24.0.0.tgz#4feee8ec4a358f5bee0a654e94eb26163cb9089a"
 
 jest-resolve-dependencies@^23.6.0:
   version "23.6.0"
@@ -6839,9 +7074,24 @@ jest-resolve-dependencies@^23.6.0:
     jest-regex-util "^23.3.0"
     jest-snapshot "^23.6.0"
 
+jest-resolve-dependencies@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/jest-resolve-dependencies/-/jest-resolve-dependencies-24.1.0.tgz#78f738a2ec59ff4d00751d9da56f176e3f589f6c"
+  dependencies:
+    jest-regex-util "^24.0.0"
+    jest-snapshot "^24.1.0"
+
 jest-resolve@^23.6.0:
   version "23.6.0"
   resolved "https://unpm.uberinternal.com/jest-resolve/-/jest-resolve-23.6.0.tgz#cf1d1a24ce7ee7b23d661c33ba2150f3aebfa0ae"
+  dependencies:
+    browser-resolve "^1.11.3"
+    chalk "^2.0.1"
+    realpath-native "^1.0.0"
+
+jest-resolve@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/jest-resolve/-/jest-resolve-24.1.0.tgz#42ff0169b0ea47bfdbd0c52a0067ca7d022c7688"
   dependencies:
     browser-resolve "^1.11.3"
     chalk "^2.0.1"
@@ -6862,6 +7112,25 @@ jest-runner@^23.6.0:
     jest-runtime "^23.6.0"
     jest-util "^23.4.0"
     jest-worker "^23.2.0"
+    source-map-support "^0.5.6"
+    throat "^4.0.0"
+
+jest-runner@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/jest-runner/-/jest-runner-24.1.0.tgz#3686a2bb89ce62800da23d7fdc3da2c32792943b"
+  dependencies:
+    chalk "^2.4.2"
+    exit "^0.1.2"
+    graceful-fs "^4.1.15"
+    jest-config "^24.1.0"
+    jest-docblock "^24.0.0"
+    jest-haste-map "^24.0.0"
+    jest-jasmine2 "^24.1.0"
+    jest-leak-detector "^24.0.0"
+    jest-message-util "^24.0.0"
+    jest-runtime "^24.1.0"
+    jest-util "^24.0.0"
+    jest-worker "^24.0.0"
     source-map-support "^0.5.6"
     throat "^4.0.0"
 
@@ -6891,9 +7160,40 @@ jest-runtime@^23.6.0:
     write-file-atomic "^2.1.0"
     yargs "^11.0.0"
 
+jest-runtime@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/jest-runtime/-/jest-runtime-24.1.0.tgz#7c157a2e776609e8cf552f956a5a19ec9c985214"
+  dependencies:
+    "@babel/core" "^7.1.0"
+    babel-plugin-istanbul "^5.1.0"
+    chalk "^2.0.1"
+    convert-source-map "^1.4.0"
+    exit "^0.1.2"
+    fast-json-stable-stringify "^2.0.0"
+    glob "^7.1.3"
+    graceful-fs "^4.1.15"
+    jest-config "^24.1.0"
+    jest-haste-map "^24.0.0"
+    jest-message-util "^24.0.0"
+    jest-regex-util "^24.0.0"
+    jest-resolve "^24.1.0"
+    jest-snapshot "^24.1.0"
+    jest-util "^24.0.0"
+    jest-validate "^24.0.0"
+    micromatch "^3.1.10"
+    realpath-native "^1.0.0"
+    slash "^2.0.0"
+    strip-bom "^3.0.0"
+    write-file-atomic "2.4.1"
+    yargs "^12.0.2"
+
 jest-serializer@^23.0.1:
   version "23.0.1"
   resolved "https://unpm.uberinternal.com/jest-serializer/-/jest-serializer-23.0.1.tgz#a3776aeb311e90fe83fab9e533e85102bd164165"
+
+jest-serializer@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-serializer/-/jest-serializer-24.0.0.tgz#522c44a332cdd194d8c0531eb06a1ee5afb4256b"
 
 jest-snapshot@^23.6.0:
   version "23.6.0"
@@ -6910,6 +7210,21 @@ jest-snapshot@^23.6.0:
     pretty-format "^23.6.0"
     semver "^5.5.0"
 
+jest-snapshot@^24.1.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/jest-snapshot/-/jest-snapshot-24.1.0.tgz#85e22f810357aa5994ab61f236617dc2205f2f5b"
+  dependencies:
+    "@babel/types" "^7.0.0"
+    chalk "^2.0.1"
+    jest-diff "^24.0.0"
+    jest-matcher-utils "^24.0.0"
+    jest-message-util "^24.0.0"
+    jest-resolve "^24.1.0"
+    mkdirp "^0.5.1"
+    natural-compare "^1.4.0"
+    pretty-format "^24.0.0"
+    semver "^5.5.0"
+
 jest-util@^23.4.0:
   version "23.4.0"
   resolved "https://unpm.uberinternal.com/jest-util/-/jest-util-23.4.0.tgz#4d063cb927baf0a23831ff61bec2cbbf49793561"
@@ -6923,6 +7238,19 @@ jest-util@^23.4.0:
     slash "^1.0.0"
     source-map "^0.6.0"
 
+jest-util@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-util/-/jest-util-24.0.0.tgz#fd38fcafd6dedbd0af2944d7a227c0d91b68f7d6"
+  dependencies:
+    callsites "^3.0.0"
+    chalk "^2.0.1"
+    graceful-fs "^4.1.15"
+    is-ci "^2.0.0"
+    jest-message-util "^24.0.0"
+    mkdirp "^0.5.1"
+    slash "^2.0.0"
+    source-map "^0.6.0"
+
 jest-validate@^23.6.0:
   version "23.6.0"
   resolved "https://unpm.uberinternal.com/jest-validate/-/jest-validate-23.6.0.tgz#36761f99d1ed33fcd425b4e4c5595d62b6597474"
@@ -6932,12 +7260,31 @@ jest-validate@^23.6.0:
     leven "^2.1.0"
     pretty-format "^23.6.0"
 
+jest-validate@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-validate/-/jest-validate-24.0.0.tgz#aa8571a46983a6538328fef20406b4a496b6c020"
+  dependencies:
+    camelcase "^5.0.0"
+    chalk "^2.0.1"
+    jest-get-type "^24.0.0"
+    leven "^2.1.0"
+    pretty-format "^24.0.0"
+
 jest-watcher@^23.4.0:
   version "23.4.0"
   resolved "https://unpm.uberinternal.com/jest-watcher/-/jest-watcher-23.4.0.tgz#d2e28ce74f8dad6c6afc922b92cabef6ed05c91c"
   dependencies:
     ansi-escapes "^3.0.0"
     chalk "^2.0.1"
+    string-length "^2.0.0"
+
+jest-watcher@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-watcher/-/jest-watcher-24.0.0.tgz#20d44244d10b0b7312410aefd256c1c1eef68890"
+  dependencies:
+    ansi-escapes "^3.0.0"
+    chalk "^2.0.1"
+    jest-util "^24.0.0"
     string-length "^2.0.0"
 
 jest-worker@^22.4.3:
@@ -6952,12 +7299,26 @@ jest-worker@^23.2.0:
   dependencies:
     merge-stream "^1.0.1"
 
+jest-worker@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/jest-worker/-/jest-worker-24.0.0.tgz#3d3483b077bf04f412f47654a27bba7e947f8b6d"
+  dependencies:
+    merge-stream "^1.0.1"
+    supports-color "^6.1.0"
+
 jest@^23.6.0:
   version "23.6.0"
   resolved "https://unpm.uberinternal.com/jest/-/jest-23.6.0.tgz#ad5835e923ebf6e19e7a1d7529a432edfee7813d"
   dependencies:
     import-local "^1.0.0"
     jest-cli "^23.6.0"
+
+jest@^24.0.0:
+  version "24.1.0"
+  resolved "https://unpm.uberinternal.com/jest/-/jest-24.1.0.tgz#b1e1135caefcf2397950ecf7f90e395fde866fd2"
+  dependencies:
+    import-local "^2.0.0"
+    jest-cli "^24.1.0"
 
 js-cookie@^2.2.0:
   version "2.2.0"
@@ -7168,6 +7529,10 @@ kind-of@^6.0.0, kind-of@^6.0.2:
 kleur@^2.0.1:
   version "2.0.2"
   resolved "https://unpm.uberinternal.com/kleur/-/kleur-2.0.2.tgz#b704f4944d95e255d038f0cb05fb8a602c55a300"
+
+kleur@^3.0.0:
+  version "3.0.1"
+  resolved "https://unpm.uberinternal.com/kleur/-/kleur-3.0.1.tgz#4f5b313f5fa315432a400f19a24db78d451ede62"
 
 koa-bodyparser@^4.2.1:
   version "4.2.1"
@@ -7533,16 +7898,6 @@ matched@^1.0.2:
 math-random@^1.0.1:
   version "1.0.4"
   resolved "https://unpm.uberinternal.com/math-random/-/math-random-1.0.4.tgz#5dd6943c938548267016d4e34f057583080c514c"
-
-md5-hex@^2.0.0:
-  version "2.0.0"
-  resolved "https://unpm.uberinternal.com/md5-hex/-/md5-hex-2.0.0.tgz#d0588e9f1c74954492ecd24ac0ac6ce997d92e33"
-  dependencies:
-    md5-o-matic "^0.1.1"
-
-md5-o-matic@^0.1.1:
-  version "0.1.1"
-  resolved "https://unpm.uberinternal.com/md5-o-matic/-/md5-o-matic-0.1.1.tgz#822bccd65e117c514fab176b25945d54100a03c3"
 
 md5.js@^1.3.4:
   version "1.3.5"
@@ -8049,8 +8404,8 @@ normalize-path@^2.0.1, normalize-path@^2.1.1:
     remove-trailing-separator "^1.0.1"
 
 npm-bundled@^1.0.1:
-  version "1.0.5"
-  resolved "https://unpm.uberinternal.com/npm-bundled/-/npm-bundled-1.0.5.tgz#3c1732b7ba936b3a10325aef616467c0ccbcc979"
+  version "1.0.6"
+  resolved "https://unpm.uberinternal.com/npm-bundled/-/npm-bundled-1.0.6.tgz#e7ba9aadcef962bb61248f91721cd932b3fe6bdd"
 
 npm-packlist@^1.1.6:
   version "1.2.0"
@@ -8099,34 +8454,33 @@ nwsapi@^2.0.7:
   resolved "https://unpm.uberinternal.com/nwsapi/-/nwsapi-2.1.0.tgz#781065940aed90d9bb01ca5d0ce0fcf81c32712f"
 
 nyc@^13.1.0:
-  version "13.1.0"
-  resolved "https://unpm.uberinternal.com/nyc/-/nyc-13.1.0.tgz#463665c7ff6b5798e322624a5eb449a678db90e3"
+  version "13.2.0"
+  resolved "https://unpm.uberinternal.com/nyc/-/nyc-13.2.0.tgz#6a4a4b3f5f97b63ab491c665567557debcfa23d6"
   dependencies:
     archy "^1.0.0"
     arrify "^1.0.1"
-    caching-transform "^2.0.0"
+    caching-transform "^3.0.1"
     convert-source-map "^1.6.0"
-    debug-log "^1.0.1"
     find-cache-dir "^2.0.0"
     find-up "^3.0.0"
     foreground-child "^1.5.6"
     glob "^7.1.3"
-    istanbul-lib-coverage "^2.0.1"
-    istanbul-lib-hook "^2.0.1"
-    istanbul-lib-instrument "^3.0.0"
-    istanbul-lib-report "^2.0.2"
-    istanbul-lib-source-maps "^2.0.1"
-    istanbul-reports "^2.0.1"
+    istanbul-lib-coverage "^2.0.3"
+    istanbul-lib-hook "^2.0.3"
+    istanbul-lib-instrument "^3.0.1"
+    istanbul-lib-report "^2.0.4"
+    istanbul-lib-source-maps "^3.0.2"
+    istanbul-reports "^2.1.0"
     make-dir "^1.3.0"
     merge-source-map "^1.1.0"
     resolve-from "^4.0.0"
-    rimraf "^2.6.2"
+    rimraf "^2.6.3"
     signal-exit "^3.0.2"
     spawn-wrap "^1.4.2"
-    test-exclude "^5.0.0"
+    test-exclude "^5.1.0"
     uuid "^3.3.2"
-    yargs "11.1.0"
-    yargs-parser "^9.0.2"
+    yargs "^12.0.5"
+    yargs-parser "^11.1.1"
 
 oauth-sign@~0.9.0:
   version "0.9.0"
@@ -8333,6 +8687,12 @@ p-defer@^1.0.0:
   version "1.0.0"
   resolved "https://unpm.uberinternal.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
 
+p-each-series@^1.0.0:
+  version "1.0.0"
+  resolved "https://unpm.uberinternal.com/p-each-series/-/p-each-series-1.0.0.tgz#930f3d12dd1f50e7434457a22cd6f04ac6ad7f71"
+  dependencies:
+    p-reduce "^1.0.0"
+
 p-finally@^1.0.0:
   version "1.0.0"
   resolved "https://unpm.uberinternal.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
@@ -8369,6 +8729,10 @@ p-pipe@^1.1.0:
   version "1.2.0"
   resolved "https://unpm.uberinternal.com/p-pipe/-/p-pipe-1.2.0.tgz#4b1a11399a11520a67790ee5a0c1d5881d6befe9"
 
+p-reduce@^1.0.0:
+  version "1.0.0"
+  resolved "https://unpm.uberinternal.com/p-reduce/-/p-reduce-1.0.0.tgz#18c2b0dd936a4690a529f8231f58a0fdb6a47dfa"
+
 p-try@^1.0.0:
   version "1.0.0"
   resolved "https://unpm.uberinternal.com/p-try/-/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
@@ -8377,13 +8741,13 @@ p-try@^2.0.0:
   version "2.0.0"
   resolved "https://unpm.uberinternal.com/p-try/-/p-try-2.0.0.tgz#85080bb87c64688fa47996fe8f7dfbe8211760b1"
 
-package-hash@^2.0.0:
-  version "2.0.0"
-  resolved "https://unpm.uberinternal.com/package-hash/-/package-hash-2.0.0.tgz#78ae326c89e05a4d813b68601977af05c00d2a0d"
+package-hash@^3.0.0:
+  version "3.0.0"
+  resolved "https://unpm.uberinternal.com/package-hash/-/package-hash-3.0.0.tgz#50183f2d36c9e3e528ea0a8605dff57ce976f88e"
   dependencies:
-    graceful-fs "^4.1.11"
+    graceful-fs "^4.1.15"
+    hasha "^3.0.0"
     lodash.flattendeep "^4.4.0"
-    md5-hex "^2.0.0"
     release-zalgo "^1.0.0"
 
 pako@~1.0.5:
@@ -8641,6 +9005,13 @@ pretty-format@^23.6.0:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
 
+pretty-format@^24.0.0:
+  version "24.0.0"
+  resolved "https://unpm.uberinternal.com/pretty-format/-/pretty-format-24.0.0.tgz#cb6599fd73ac088e37ed682f61291e4678f48591"
+  dependencies:
+    ansi-regex "^4.0.0"
+    ansi-styles "^3.2.0"
+
 private@^0.1.6, private@^0.1.8:
   version "0.1.8"
   resolved "https://unpm.uberinternal.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
@@ -8685,6 +9056,13 @@ prompts@^0.1.9:
   dependencies:
     kleur "^2.0.1"
     sisteransi "^0.1.1"
+
+prompts@^2.0.1:
+  version "2.0.1"
+  resolved "https://unpm.uberinternal.com/prompts/-/prompts-2.0.1.tgz#201b3718b4276fb407f037db48c0029d6465245c"
+  dependencies:
+    kleur "^3.0.0"
+    sisteransi "^1.0.0"
 
 prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.6.2"
@@ -9065,7 +9443,7 @@ readdirp@^2.0.0:
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
 
-realpath-native@^1.0.0:
+realpath-native@^1.0.0, realpath-native@^1.0.2:
   version "1.0.2"
   resolved "https://unpm.uberinternal.com/realpath-native/-/realpath-native-1.0.2.tgz#cd51ce089b513b45cf9b1516c82989b51ccc6560"
   dependencies:
@@ -9365,7 +9743,7 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2, rimraf@~2.6.2:
+rimraf@^2.5.4, rimraf@^2.6.1, rimraf@^2.6.2, rimraf@^2.6.3, rimraf@~2.6.2:
   version "2.6.3"
   resolved "https://unpm.uberinternal.com/rimraf/-/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"
   dependencies:
@@ -9462,6 +9840,22 @@ sane@^2.0.0:
     anymatch "^2.0.0"
     capture-exit "^1.2.0"
     exec-sh "^0.2.0"
+    fb-watchman "^2.0.0"
+    micromatch "^3.1.4"
+    minimist "^1.1.1"
+    walker "~1.0.5"
+    watch "~0.18.0"
+  optionalDependencies:
+    fsevents "^1.2.3"
+
+sane@^3.0.0:
+  version "3.1.0"
+  resolved "https://unpm.uberinternal.com/sane/-/sane-3.1.0.tgz#995193b7dc1445ef1fe41ddfca2faf9f111854c6"
+  dependencies:
+    anymatch "^2.0.0"
+    capture-exit "^1.2.0"
+    exec-sh "^0.2.0"
+    execa "^1.0.0"
     fb-watchman "^2.0.0"
     micromatch "^3.1.4"
     minimist "^1.1.1"
@@ -9638,6 +10032,10 @@ sinon@^7.1.1:
 sisteransi@^0.1.1:
   version "0.1.1"
   resolved "https://unpm.uberinternal.com/sisteransi/-/sisteransi-0.1.1.tgz#5431447d5f7d1675aac667ccd0b865a4994cb3ce"
+
+sisteransi@^1.0.0:
+  version "1.0.0"
+  resolved "https://unpm.uberinternal.com/sisteransi/-/sisteransi-1.0.0.tgz#77d9622ff909080f1c19e5f4a1df0c1b0a27b88c"
 
 slash@^1.0.0:
   version "1.0.0"
@@ -9979,9 +10377,15 @@ supports-color@^4.2.1:
   dependencies:
     has-flag "^2.0.0"
 
-supports-color@^5.3.0, supports-color@^5.4.0, supports-color@^5.5.0:
+supports-color@^5.3.0, supports-color@^5.5.0:
   version "5.5.0"
   resolved "https://unpm.uberinternal.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
+  dependencies:
+    has-flag "^3.0.0"
+
+supports-color@^6.0.0, supports-color@^6.1.0:
+  version "6.1.0"
+  resolved "https://unpm.uberinternal.com/supports-color/-/supports-color-6.1.0.tgz#0764abc69c63d5ac842dd4867e8d025e880df8f3"
   dependencies:
     has-flag "^3.0.0"
 
@@ -10136,9 +10540,9 @@ test-exclude@^4.2.1:
     read-pkg-up "^1.0.1"
     require-main-filename "^1.0.1"
 
-test-exclude@^5.0.0:
-  version "5.0.0"
-  resolved "https://unpm.uberinternal.com/test-exclude/-/test-exclude-5.0.0.tgz#cdce7cece785e0e829cd5c2b27baf18bc583cfb7"
+test-exclude@^5.0.0, test-exclude@^5.1.0:
+  version "5.1.0"
+  resolved "https://unpm.uberinternal.com/test-exclude/-/test-exclude-5.1.0.tgz#6ba6b25179d2d38724824661323b73e03c0c1de1"
   dependencies:
     arrify "^1.0.1"
     minimatch "^3.0.4"
@@ -10251,10 +10655,10 @@ toposort@^2.0.2:
   resolved "https://unpm.uberinternal.com/toposort/-/toposort-2.0.2.tgz#ae21768175d1559d48bef35420b2f4962f09c330"
 
 tough-cookie@>=2.3.3:
-  version "3.0.0"
-  resolved "https://unpm.uberinternal.com/tough-cookie/-/tough-cookie-3.0.0.tgz#d2bceddebde633153ff20a52fa844a0dc71dacef"
+  version "3.0.1"
+  resolved "https://unpm.uberinternal.com/tough-cookie/-/tough-cookie-3.0.1.tgz#9df4f57e739c26930a018184887f4adb7dca73b2"
   dependencies:
-    ip-regex "^3.0.0"
+    ip-regex "^2.1.0"
     psl "^1.1.28"
     punycode "^2.1.1"
 
@@ -10768,7 +11172,15 @@ wrappy@1:
   version "1.0.2"
   resolved "https://unpm.uberinternal.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
 
-write-file-atomic@^2.0.0, write-file-atomic@^2.1.0:
+write-file-atomic@2.4.1:
+  version "2.4.1"
+  resolved "https://unpm.uberinternal.com/write-file-atomic/-/write-file-atomic-2.4.1.tgz#d0b05463c188ae804396fd5ab2a370062af87529"
+  dependencies:
+    graceful-fs "^4.1.11"
+    imurmurhash "^0.1.4"
+    signal-exit "^3.0.2"
+
+write-file-atomic@^2.1.0, write-file-atomic@^2.3.0:
   version "2.4.2"
   resolved "https://unpm.uberinternal.com/write-file-atomic/-/write-file-atomic-2.4.2.tgz#a7181706dfba17855d221140a9c06e15fcdd87b9"
   dependencies:
@@ -10845,7 +11257,7 @@ yargs-parser@^9.0.2:
   dependencies:
     camelcase "^4.1.0"
 
-yargs@11.1.0, yargs@^11.0.0:
+yargs@^11.0.0:
   version "11.1.0"
   resolved "https://unpm.uberinternal.com/yargs/-/yargs-11.1.0.tgz#90b869934ed6e871115ea2ff58b03f4724ed2d77"
   dependencies:
@@ -10862,7 +11274,7 @@ yargs@11.1.0, yargs@^11.0.0:
     y18n "^3.2.1"
     yargs-parser "^9.0.2"
 
-yargs@^12.0.5:
+yargs@^12.0.2, yargs@^12.0.5:
   version "12.0.5"
   resolved "https://unpm.uberinternal.com/yargs/-/yargs-12.0.5.tgz#05f5997b609647b64f66b81e3b4b10a368e7ad13"
   dependencies:
