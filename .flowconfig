@@ -1,5 +1,6 @@
 [ignore]
 .*/common/temp/yarn-cache/.*
+.*/fixtures/failure/.*
 
 [include]
 
