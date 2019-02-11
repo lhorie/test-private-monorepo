@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "eslint-config-fusion",
+      "projectFolder": "public/eslint-config-fusion"
+    },
+    {
       "packageName": "fusion-plugin-rpc-redux-react",
       "projectFolder": "public/fusion-plugin-rpc-redux-react"
     },
