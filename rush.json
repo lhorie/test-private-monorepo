@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-service-worker",
+      "projectFolder": "public/fusion-plugin-service-worker"
+    },
+    {
       "packageName": "eslint-config-fusion",
       "projectFolder": "public/eslint-config-fusion"
     },
