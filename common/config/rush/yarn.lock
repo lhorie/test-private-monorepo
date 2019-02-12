@@ -1284,9 +1284,30 @@
     "@babel/helper-replace-supers" "^7.0.0"
     "@babel/plugin-syntax-class-properties" "^7.0.0"
 
+"@rush-temp/create-fusion-app@file:./projects/create-fusion-app.tgz":
+  version "0.0.0"
+  resolved "file:./projects/create-fusion-app.tgz#e5c1c51ebbecd4be9e0fb4fc2f82ad1e07cb42ee"
+  dependencies:
+    babel-eslint "^10.0.1"
+    babel-jest "^24.1.0"
+    chalk "^2.4.1"
+    eslint "^5.13.0"
+    eslint-plugin-cup "^2.0.1"
+    eslint-plugin-flowtype "^3.2.1"
+    eslint-plugin-import "^2.16.0"
+    eslint-plugin-jest "^22.2.2"
+    eslint-plugin-prettier "^3.0.1"
+    eslint-plugin-react "^7.12.4"
+    flow-bin "^0.92.1"
+    get-port "^4.1.0"
+    isomorphic-fetch "^2.2.1"
+    jest-cli "^23.6.0"
+    prettier "^1.16.4"
+    puppeteer "^1.12.2"
+
 "@rush-temp/eslint-config-fusion@file:./projects/eslint-config-fusion.tgz":
   version "0.0.0"
-  resolved "file:./projects/eslint-config-fusion.tgz#8aa9f8c012dfc17772846e5bd1900a43318a69ee"
+  resolved "file:./projects/eslint-config-fusion.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     eslint "^5.13.0"
@@ -1831,6 +1852,32 @@
     prettier "^1.16.4"
     rollup "^0.67.3"
     sinon "^7.1.1"
+    tape-cup "^4.7.1"
+    unitest "^2.1.1"
+
+"@rush-temp/fusion-plugin-service-worker@file:./projects/fusion-plugin-service-worker.tgz":
+  version "0.0.0"
+  resolved "file:./projects/fusion-plugin-service-worker.tgz#708759e0ecc17d956aadab2fb6181a1af72ee583"
+  dependencies:
+    "@babel/preset-react" "^7.0.0"
+    babel-eslint "^10.0.1"
+    create-universal-package "^3.4.6"
+    enzyme "^3.8.0"
+    enzyme-adapter-react-16 "^1.9.1"
+    eslint "^5.13.0"
+    eslint-plugin-cup "^2.0.1"
+    eslint-plugin-flowtype "^3.2.1"
+    eslint-plugin-import "^2.16.0"
+    eslint-plugin-jest "^22.2.2"
+    eslint-plugin-prettier "^3.0.1"
+    eslint-plugin-react "^7.12.4"
+    flow-bin "^0.92.1"
+    nyc "^13.2.0"
+    prettier "^1.16.4"
+    react "^16.8.1"
+    react-dom "^16.8.1"
+    react-redux "^5.1.1"
+    redux "^4.0.1"
     tape-cup "^4.7.1"
     unitest "^2.1.1"
 
@@ -4754,21 +4801,9 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-cup@^2.0.0, eslint-config-cup@^2.0.1:
+eslint-config-cup@^2.0.1:
   version "2.0.2"
   resolved "https://unpm.uberinternal.com/eslint-config-cup/-/eslint-config-cup-2.0.2.tgz#dd96a158fe8ebbcf9f3625041b0a740312072b7e"
-
-eslint-config-fusion@^4.0.0:
-  version "4.0.0"
-  resolved "https://unpm.uberinternal.com/eslint-config-fusion/-/eslint-config-fusion-4.0.0.tgz#31b40bc4a880983af5ad3a9821b613e2cae79e21"
-  dependencies:
-    eslint-config-uber-universal-stage-3 "^2.0.0"
-
-eslint-config-prettier@^2.0.0:
-  version "2.10.0"
-  resolved "https://unpm.uberinternal.com/eslint-config-prettier/-/eslint-config-prettier-2.10.0.tgz#ec07bc1d01f87d09f61d3840d112dc8a9791e30b"
-  dependencies:
-    get-stdin "^5.0.1"
 
 eslint-config-prettier@^3.1.0:
   version "3.6.0"
@@ -4776,23 +4811,11 @@ eslint-config-prettier@^3.1.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-uber-base-stage-3@^2.1.0:
-  version "2.1.0"
-  resolved "https://unpm.uberinternal.com/eslint-config-uber-base-stage-3/-/eslint-config-uber-base-stage-3-2.1.0.tgz#97aa40c3b254f6bdc40411eb3c7fa366b1777efe"
-  dependencies:
-    eslint-config-uber-base "^2.1.0"
-
 eslint-config-uber-base-stage-3@^3.0.0:
   version "3.0.0"
   resolved "https://unpm.uberinternal.com/eslint-config-uber-base-stage-3/-/eslint-config-uber-base-stage-3-3.0.0.tgz#8abf661ff0169c0fb06af1812958b867515c936e"
   dependencies:
     eslint-config-uber-base "^3.0.0"
-
-eslint-config-uber-base@^2.1.0:
-  version "2.1.0"
-  resolved "https://unpm.uberinternal.com/eslint-config-uber-base/-/eslint-config-uber-base-2.1.0.tgz#588d200eec45243728f2eeb66fab6fd296cf02cd"
-  dependencies:
-    eslint-config-prettier "^2.0.0"
 
 eslint-config-uber-base@^3.0.0:
   version "3.0.0"
@@ -4806,13 +4829,6 @@ eslint-config-uber-universal-stage-3@3.0.0, eslint-config-uber-universal-stage-3
   dependencies:
     eslint-config-cup "^2.0.1"
     eslint-config-uber-base-stage-3 "^3.0.0"
-
-eslint-config-uber-universal-stage-3@^2.0.0:
-  version "2.1.0"
-  resolved "https://unpm.uberinternal.com/eslint-config-uber-universal-stage-3/-/eslint-config-uber-universal-stage-3-2.1.0.tgz#a4e799377473065899e2232069d46fdea1c45b87"
-  dependencies:
-    eslint-config-cup "^2.0.0"
-    eslint-config-uber-base-stage-3 "^2.1.0"
 
 eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
@@ -5403,10 +5419,6 @@ flat-cache@^1.2.1:
     rimraf "~2.6.2"
     write "^0.2.1"
 
-flow-bin@^0.91.0:
-  version "0.91.0"
-  resolved "https://unpm.uberinternal.com/flow-bin/-/flow-bin-0.91.0.tgz#f5c89729f74b2ccbd47df6fbfadbdcc89cc1e478"
-
 flow-bin@^0.92.1:
   version "0.92.1"
   resolved "https://unpm.uberinternal.com/flow-bin/-/flow-bin-0.92.1.tgz#32c136c07235f30c42dc0549a0790f370fad4070"
@@ -5641,10 +5653,6 @@ get-port@^3.2.0:
 get-port@^4.0.0, get-port@^4.1.0:
   version "4.1.0"
   resolved "https://unpm.uberinternal.com/get-port/-/get-port-4.1.0.tgz#93eb3d5552c197497d76e9c389a6ac9920e20192"
-
-get-stdin@^5.0.1:
-  version "5.0.1"
-  resolved "https://unpm.uberinternal.com/get-stdin/-/get-stdin-5.0.1.tgz#122e161591e21ff4c52530305693f20e6393a398"
 
 get-stdin@^6.0.0:
   version "6.0.0"
@@ -6558,7 +6566,7 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://unpm.uberinternal.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
-isomorphic-fetch@^2.1.1:
+isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
   version "2.2.1"
   resolved "https://unpm.uberinternal.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
   dependencies:
@@ -6713,7 +6721,7 @@ jest-changed-files@^24.0.0:
     execa "^1.0.0"
     throat "^4.0.0"
 
-jest-cli@23.6.0:
+jest-cli@23.6.0, jest-cli@^23.6.0:
   version "23.6.0"
   resolved "https://unpm.uberinternal.com/jest-cli/-/jest-cli-23.6.0.tgz#61ab917744338f443ef2baa282ddffdd658a5da4"
   dependencies:
@@ -8969,7 +8977,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^1.16.3, prettier@^1.16.4:
+prettier@^1.16.4:
   version "1.16.4"
   resolved "https://unpm.uberinternal.com/prettier/-/prettier-1.16.4.tgz#73e37e73e018ad2db9c76742e2647e21790c9717"
 

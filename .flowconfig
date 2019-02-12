@@ -1,6 +1,8 @@
 [ignore]
 .*/common/temp/yarn-cache/.*
 .*/fixtures/failure/.*
+.*/templates/.*
+.*/test-artifacts/.*
 
 [include]
 
