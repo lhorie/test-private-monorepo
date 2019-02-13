@@ -255,6 +255,10 @@
    */
   "projects": [
     {
+      "packageName": "fusion-plugin-i18n-react",
+      "projectFolder": "public/fusion-plugin-i18n-react"
+    },
+    {
       "packageName": "create-fusion-app",
       "projectFolder": "public/create-fusion-app"
     },
