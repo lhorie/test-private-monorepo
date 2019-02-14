@@ -1240,7 +1240,7 @@
 
 "@rush-temp/create-fusion-app@file:./projects/create-fusion-app.tgz":
   version "0.0.0"
-  resolved "file:./projects/create-fusion-app.tgz#285caefc28e2ff82ccb07bc04ba74f2c9fef0784"
+  resolved "file:./projects/create-fusion-app.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     babel-jest "^24.1.0"
@@ -1252,7 +1252,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     get-port "^4.1.0"
     isomorphic-fetch "^2.2.1"
     jest "^24.1.0"
@@ -1261,7 +1261,7 @@
 
 "@rush-temp/eslint-config-fusion@file:./projects/eslint-config-fusion.tgz":
   version "0.0.0"
-  resolved "file:./projects/eslint-config-fusion.tgz#6af9ec3279a6201f0ea8ca0225d110c6bd8ee024"
+  resolved "file:./projects/eslint-config-fusion.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     eslint "^5.13.0"
@@ -1272,15 +1272,15 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     prettier "^1.16.4"
 
 "@rush-temp/fusion-apollo-universal-client@file:./projects/fusion-apollo-universal-client.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-apollo-universal-client.tgz#a09b2a8c567399a8263a2141380c48ab6ed86974"
+  resolved "file:./projects/fusion-apollo-universal-client.tgz"
   dependencies:
     apollo-cache-inmemory "^1.3.12"
-    apollo-client "^2.4.12"
+    apollo-client "^2.4.13"
     apollo-link "^1.2.6"
     apollo-link-http "^1.5.9"
     apollo-link-schema "^1.1.4"
@@ -1295,7 +1295,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     graphql "^14.1.1"
     graphql-tag "^2.10.1"
     graphql-tools "^4.0.3"
@@ -1312,11 +1312,11 @@
 
 "@rush-temp/fusion-apollo@file:./projects/fusion-apollo.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-apollo.tgz#9f1f928f716b0a236d35106b0ba09891272e4705"
+  resolved "file:./projects/fusion-apollo.tgz"
   dependencies:
     "@babel/preset-react" "^7.0.0"
     apollo-cache-inmemory "^1.3.12"
-    apollo-client "^2.4.12"
+    apollo-client "^2.4.13"
     apollo-link-schema "^1.1.4"
     babel-eslint "^10.0.1"
     create-universal-package "^3.4.6"
@@ -1327,7 +1327,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     graphql "^14.1.1"
     graphql-tag "^2.10.1"
     graphql-tools "^4.0.3"
@@ -1341,7 +1341,7 @@
 
 "@rush-temp/fusion-cli@file:./projects/fusion-cli.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-cli.tgz#866905158340414153d845562de26707c3899c4d"
+  resolved "file:./projects/fusion-cli.tgz"
   dependencies:
     "@babel/core" "^7.2.2"
     "@babel/plugin-syntax-dynamic-import" "7.2.0"
@@ -1371,7 +1371,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     get-port "^4.1.0"
     globby "^8.0.1"
     graphql "^14.1.1"
@@ -1388,7 +1388,7 @@
     koa-mount "^4.0.0"
     koa-static "^5.0.0"
     loader-utils "^1.1.0"
-    locale "0.1.0"
+    locale "^0.1.0"
     make-dir "^1.3.0"
     memory-fs "^0.4.1"
     prettier "^1.16.4"
@@ -1413,7 +1413,7 @@
 
 "@rush-temp/fusion-core@file:./projects/fusion-core.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-core.tgz#3f7f494f782fb0dc289d8ae9defd9302880a83b3"
+  resolved "file:./projects/fusion-core.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     babel-plugin-transform-flow-strip-types "^6.22.0"
@@ -1425,7 +1425,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     koa "^2.6.2"
     koa-compose "^4.1.0"
     node-fetch "^2.3.0"
@@ -1440,11 +1440,11 @@
 
 "@rush-temp/fusion-plugin-apollo-server@file:./projects/fusion-plugin-apollo-server.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-apollo-server.tgz#da2d42fc59a1fb769b56c599da54535cf8cd5db0"
+  resolved "file:./projects/fusion-plugin-apollo-server.tgz"
   dependencies:
     "@babel/preset-react" "^7.0.0"
     "@types/redux" "^3.6.0"
-    apollo-client "^2.4.12"
+    apollo-client "^2.4.13"
     apollo-server-koa "^1.3.6"
     babel-eslint "^10.0.1"
     create-universal-package "^3.4.6"
@@ -1457,12 +1457,12 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     graphql "^14.1.1"
     graphql-tools "^4.0.3"
     nyc "^13.2.0"
     prettier "^1.16.4"
-    prop-types "^15.7.1"
+    prop-types "^15.7.2"
     react "^16.8.1"
     react-apollo "^2.4.1"
     react-dom "^16.8.1"
@@ -1471,7 +1471,7 @@
 
 "@rush-temp/fusion-plugin-browser-performance-emitter@file:./projects/fusion-plugin-browser-performance-emitter.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-browser-performance-emitter.tgz#fe29fc2f5f04d9614bf9b8cec12be163da85fe16"
+  resolved "file:./projects/fusion-plugin-browser-performance-emitter.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     babel-plugin-transform-flow-strip-types "^6.22.0"
@@ -1483,7 +1483,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
     tape-cup "^4.7.1"
@@ -1491,7 +1491,7 @@
 
 "@rush-temp/fusion-plugin-csrf-protection@file:./projects/fusion-plugin-csrf-protection.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-csrf-protection.tgz#1bb27461b76341667161c09344755c6af21c7180"
+  resolved "file:./projects/fusion-plugin-csrf-protection.tgz"
   dependencies:
     "@babel/preset-react" "^7.0.0"
     babel-eslint "^10.0.1"
@@ -1506,7 +1506,7 @@
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
     express "^4.16.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     generic-session "0.1.2"
     get-port "^4.1.0"
     nyc "^13.2.0"
@@ -1517,7 +1517,7 @@
 
 "@rush-temp/fusion-plugin-error-handling@file:./projects/fusion-plugin-error-handling.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-error-handling.tgz#30b89dc528fae99de5329bc305411b187fc4cce3"
+  resolved "file:./projects/fusion-plugin-error-handling.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     babel-plugin-transform-flow-strip-types "^6.22.0"
@@ -1529,7 +1529,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     koa-bodyparser "^4.2.1"
     nyc "^13.2.0"
     prettier "^1.16.4"
@@ -1538,7 +1538,7 @@
 
 "@rush-temp/fusion-plugin-font-loader-react@file:./projects/fusion-plugin-font-loader-react.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-font-loader-react.tgz#9f3dfd5681ec877bea3ae9005e2dac2f2e25efaf"
+  resolved "file:./projects/fusion-plugin-font-loader-react.tgz"
   dependencies:
     "@babel/preset-react" "^7.0.0"
     babel-eslint "^10.0.1"
@@ -1552,10 +1552,10 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
-    prop-types "^15.7.1"
+    prop-types "^15.7.2"
     react "^16.8.1"
     react-dom "^16.8.1"
     tape-cup "^4.7.1"
@@ -1563,7 +1563,7 @@
 
 "@rush-temp/fusion-plugin-i18n-react@file:./projects/fusion-plugin-i18n-react.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-i18n-react.tgz#09bf9e12fddb945f72fb4f9a13f851867f8bf6dd"
+  resolved "file:./projects/fusion-plugin-i18n-react.tgz"
   dependencies:
     "@babel/plugin-transform-modules-commonjs" "^7.2.0"
     "@babel/preset-flow" "^7.0.0"
@@ -1579,11 +1579,12 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
+    fusion-test-utils "^1.3.1"
     jest "^24.1.0"
     locale "^0.1.0"
     prettier "^1.16.4"
-    prop-types "^15.7.1"
+    prop-types "^15.7.2"
     puppeteer "^1.12.2"
     react "^16.8.1"
     react-dom "^16.8.1"
@@ -1592,7 +1593,7 @@
 
 "@rush-temp/fusion-plugin-i18n@file:./projects/fusion-plugin-i18n.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-i18n.tgz#8cdc5dea20bc1fae99d15d83f7247c8204c2175f"
+  resolved "file:./projects/fusion-plugin-i18n.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     create-universal-package "^3.4.6"
@@ -1603,7 +1604,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     locale "^0.1.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
@@ -1613,7 +1614,7 @@
 
 "@rush-temp/fusion-plugin-introspect@file:./projects/fusion-plugin-introspect.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-introspect.tgz#74cb78ea6888e8dc43e35af91d2a37d09db29341"
+  resolved "file:./projects/fusion-plugin-introspect.tgz"
   dependencies:
     "@babel/core" "^7.2.2"
     "@babel/plugin-transform-modules-commonjs" "^7.2.0"
@@ -1633,7 +1634,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     jest "^24.1.0"
     koa-bodyparser "^4.2.1"
     prettier "^1.16.4"
@@ -1641,7 +1642,7 @@
 
 "@rush-temp/fusion-plugin-jwt@file:./projects/fusion-plugin-jwt.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-jwt.tgz#11ca6dca942b18c98cb0b5c219cdb435b58903bf"
+  resolved "file:./projects/fusion-plugin-jwt.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     babel-plugin-transform-flow-strip-types "^6.22.0"
@@ -1653,7 +1654,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     jsonwebtoken "^8.4.0"
     just-safe-get "^1.3.0"
     just-safe-set "^2.1.0"
@@ -1665,7 +1666,7 @@
 
 "@rush-temp/fusion-plugin-node-performance-emitter@file:./projects/fusion-plugin-node-performance-emitter.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-node-performance-emitter.tgz#d81c1c35e8a1affc37b7551c700759f390a0f575"
+  resolved "file:./projects/fusion-plugin-node-performance-emitter.tgz"
   dependencies:
     assert "^1.4.1"
     babel-eslint "^10.0.1"
@@ -1678,7 +1679,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     gc-stats "^1.2.1"
     nyc "^13.2.0"
     prettier "^1.16.4"
@@ -1688,7 +1689,7 @@
 
 "@rush-temp/fusion-plugin-react-helmet-async@file:./projects/fusion-plugin-react-helmet-async.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-react-helmet-async.tgz#230ee877e4f29ba9eee94751cd50559c80d650b6"
+  resolved "file:./projects/fusion-plugin-react-helmet-async.tgz"
   dependencies:
     "@babel/preset-react" "^7.0.0"
     babel-eslint "^10.0.1"
@@ -1700,7 +1701,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
     react "^16.8.1"
@@ -1712,7 +1713,7 @@
 
 "@rush-temp/fusion-plugin-react-redux@file:./projects/fusion-plugin-react-redux.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-react-redux.tgz#551e8c527d2b6a7d5cbcd755b479ab8448acd703"
+  resolved "file:./projects/fusion-plugin-react-redux.tgz"
   dependencies:
     "@babel/preset-react" "^7.0.0"
     babel-eslint "^10.0.1"
@@ -1727,7 +1728,7 @@
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
     execa "^1.0.0"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
     react "^16.8.1"
@@ -1739,7 +1740,7 @@
 
 "@rush-temp/fusion-plugin-react-router@file:./projects/fusion-plugin-react-router.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-react-router.tgz#bffdec835b9dae7d1c51e4fa881a987a537e9c5c"
+  resolved "file:./projects/fusion-plugin-react-router.tgz"
   dependencies:
     "@babel/preset-react" "^7.0.0"
     babel-eslint "^10.0.1"
@@ -1751,11 +1752,11 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     history "^4.7.2"
     nyc "^13.2.0"
     prettier "^1.16.4"
-    prop-types "^15.7.1"
+    prop-types "^15.7.2"
     react "^16.8.1"
     react-dom "^16.8.1"
     react-router-dom "^4.3.1"
@@ -1764,7 +1765,7 @@
 
 "@rush-temp/fusion-plugin-redux-action-emitter-enhancer@file:./projects/fusion-plugin-redux-action-emitter-enhancer.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-redux-action-emitter-enhancer.tgz#ca5e6bac50aed104c2932c67f8a885f4f0845b94"
+  resolved "file:./projects/fusion-plugin-redux-action-emitter-enhancer.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     babel-plugin-transform-flow-strip-types "^6.22.0"
@@ -1776,7 +1777,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
     react "^16.8.1"
@@ -1787,7 +1788,7 @@
 
 "@rush-temp/fusion-plugin-rpc-redux-react@file:./projects/fusion-plugin-rpc-redux-react.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-rpc-redux-react.tgz#67fdaf1f27fe5a5a274084531e659b14273d20c7"
+  resolved "file:./projects/fusion-plugin-rpc-redux-react.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     babel-plugin-transform-flow-strip-types "^6.22.0"
@@ -1799,10 +1800,10 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
-    prop-types "^15.7.1"
+    prop-types "^15.7.2"
     react "^16.8.1"
     react-dom "^16.8.1"
     react-redux "^5.1.1"
@@ -1814,7 +1815,7 @@
 
 "@rush-temp/fusion-plugin-rpc@file:./projects/fusion-plugin-rpc.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-rpc.tgz#163e24747fa7d542faf26be6985718625c692c1b"
+  resolved "file:./projects/fusion-plugin-rpc.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     body-parser "^1.18.3"
@@ -1826,7 +1827,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     just-map-object "^1.2.0"
     koa-bodyparser "^4.2.1"
     lodash.isequal "^4.5.0"
@@ -1840,7 +1841,7 @@
 
 "@rush-temp/fusion-plugin-service-worker@file:./projects/fusion-plugin-service-worker.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-service-worker.tgz#60e07e36a90f1334f4da7d188b8485a9a6b58832"
+  resolved "file:./projects/fusion-plugin-service-worker.tgz"
   dependencies:
     "@babel/preset-react" "^7.0.0"
     babel-eslint "^10.0.1"
@@ -1854,7 +1855,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
     react "^16.8.1"
@@ -1866,7 +1867,7 @@
 
 "@rush-temp/fusion-plugin-styletron-react@file:./projects/fusion-plugin-styletron-react.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-styletron-react.tgz#f7beb3576349349415d08e2e96ee674bb27dcaae"
+  resolved "file:./projects/fusion-plugin-styletron-react.tgz"
   dependencies:
     "@babel/preset-react" "^7.0.0"
     babel-eslint "^10.0.1"
@@ -1881,7 +1882,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
     react "^16.8.1"
@@ -1893,7 +1894,7 @@
 
 "@rush-temp/fusion-plugin-universal-events-react@file:./projects/fusion-plugin-universal-events-react.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-universal-events-react.tgz#d67c748a789d5d806a22fa64386dffd137ad06aa"
+  resolved "file:./projects/fusion-plugin-universal-events-react.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     create-universal-package "^3.4.6"
@@ -1904,7 +1905,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
     react "^16.8.1"
@@ -1913,7 +1914,7 @@
 
 "@rush-temp/fusion-plugin-universal-events@file:./projects/fusion-plugin-universal-events.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-universal-events.tgz#78d855b6385b6d620b2d824367f165d0b0c86117"
+  resolved "file:./projects/fusion-plugin-universal-events.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     create-universal-package "^3.4.6"
@@ -1924,7 +1925,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     koa-bodyparser "^4.2.1"
     nyc "^13.2.0"
     prettier "^1.16.4"
@@ -1933,7 +1934,7 @@
 
 "@rush-temp/fusion-plugin-universal-logger@file:./projects/fusion-plugin-universal-logger.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-plugin-universal-logger.tgz#225aa833c415e099d6b9345e1844b24e0501040a"
+  resolved "file:./projects/fusion-plugin-universal-logger.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     create-universal-package "^3.4.6"
@@ -1944,7 +1945,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
     tape-cup "^4.7.1"
@@ -1954,7 +1955,7 @@
 
 "@rush-temp/fusion-react@file:./projects/fusion-react.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-react.tgz#c94c0c0253f5d678f2630fb7910bf15a61e4802f"
+  resolved "file:./projects/fusion-react.tgz"
   dependencies:
     "@babel/preset-react" "^7.0.0"
     babel-eslint "^10.0.1"
@@ -1968,10 +1969,10 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
-    prop-types "^15.7.1"
+    prop-types "^15.7.2"
     react "^16.8.1"
     react-dom "^16.8.1"
     react-is "^16.7.0"
@@ -1980,7 +1981,7 @@
 
 "@rush-temp/fusion-rpc-redux@file:./projects/fusion-rpc-redux.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-rpc-redux.tgz#a6487af9344613632e0040f11be8932f97c7b236"
+  resolved "file:./projects/fusion-rpc-redux.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     babel-plugin-transform-flow-strip-types "^6.22.0"
@@ -1993,7 +1994,7 @@
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
     execa "^1.0.0"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
     redux "^4.0.1"
@@ -2003,7 +2004,7 @@
 
 "@rush-temp/fusion-scaffolder@file:./projects/fusion-scaffolder.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-scaffolder.tgz#1270636ce3615f30f6f07b322b8d6eb13643f512"
+  resolved "file:./projects/fusion-scaffolder.tgz"
   dependencies:
     "@babel/cli" "^7.1.5"
     "@babel/core" "^7.2.2"
@@ -2019,7 +2020,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     minimist "^1.2.0"
     mkdirp "^0.5.1"
     nunjucks "^3.1.4"
@@ -2031,7 +2032,7 @@
 
 "@rush-temp/fusion-test-utils@file:./projects/fusion-test-utils.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-test-utils.tgz#f07e79104b6a611201ecf77b75189c4bf1178631"
+  resolved "file:./projects/fusion-test-utils.tgz"
   dependencies:
     assert "^1.4.1"
     babel-eslint "^10.0.1"
@@ -2048,7 +2049,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     jest "^24.1.0"
     koa "^2.6.2"
     node-mocks-http "^1.7.3"
@@ -2059,7 +2060,7 @@
 
 "@rush-temp/fusion-tokens@file:./projects/fusion-tokens.tgz":
   version "0.0.0"
-  resolved "file:./projects/fusion-tokens.tgz#baa080536a5f4729fdaf0d66acfbeb6b7bff8b44"
+  resolved "file:./projects/fusion-tokens.tgz"
   dependencies:
     "@babel/plugin-transform-flow-strip-types" "7.2.3"
     babel-eslint "^10.0.1"
@@ -2071,7 +2072,7 @@
     eslint-plugin-jest "^22.2.2"
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-react "^7.12.4"
-    flow-bin "^0.92.1"
+    flow-bin "^0.93.0"
     nyc "^13.2.0"
     prettier "^1.16.4"
     tape-cup "^4.7.1"
@@ -2079,7 +2080,7 @@
 
 "@rush-temp/my-other@file:./projects/my-other.tgz":
   version "0.0.0"
-  resolved "file:./projects/my-other.tgz#8e28e819b60b84cc90f4764abfd0c5944fae526d"
+  resolved "file:./projects/my-other.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     eslint "^5.13.0"
@@ -2094,7 +2095,7 @@
 
 "@rush-temp/my-private@file:./projects/my-private.tgz":
   version "0.0.0"
-  resolved "file:./projects/my-private.tgz#ce4238bea614790eb771cbda9c635d1cd4510e31"
+  resolved "file:./projects/my-private.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     eslint "^5.13.0"
@@ -2109,7 +2110,7 @@
 
 "@rush-temp/my-public@file:./projects/my-public.tgz":
   version "0.0.0"
-  resolved "file:./projects/my-public.tgz#8980dd5cc8ef0e1d9ae277ef282762552ec18df8"
+  resolved "file:./projects/my-public.tgz"
   dependencies:
     babel-eslint "^10.0.1"
     eslint "^5.13.0"
@@ -2473,6 +2474,13 @@ apollo-cache@1.1.25, apollo-cache@^1.1.25:
     apollo-utilities "^1.1.2"
     tslib "^1.9.3"
 
+apollo-cache@1.1.26:
+  version "1.1.26"
+  resolved "https://registry.yarnpkg.com/apollo-cache/-/apollo-cache-1.1.26.tgz#5afe023270effbc2063d90f51d8e56bce274ab37"
+  dependencies:
+    apollo-utilities "^1.1.3"
+    tslib "^1.9.3"
+
 apollo-client@^2.4.12:
   version "2.4.12"
   resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.4.12.tgz#9fa15f502d04f8cc788a9fbb825163b437681504"
@@ -2482,6 +2490,19 @@ apollo-client@^2.4.12:
     apollo-link "^1.0.0"
     apollo-link-dedup "^1.0.0"
     apollo-utilities "1.1.2"
+    symbol-observable "^1.0.2"
+    tslib "^1.9.3"
+    zen-observable "^0.8.0"
+
+apollo-client@^2.4.13:
+  version "2.4.13"
+  resolved "https://registry.yarnpkg.com/apollo-client/-/apollo-client-2.4.13.tgz#09829fcbd68e069de9840d0a10764d7c6a3d0787"
+  dependencies:
+    "@types/zen-observable" "^0.8.0"
+    apollo-cache "1.1.26"
+    apollo-link "^1.0.0"
+    apollo-link-dedup "^1.0.0"
+    apollo-utilities "1.1.3"
     symbol-observable "^1.0.2"
     tslib "^1.9.3"
     zen-observable "^0.8.0"
@@ -2545,6 +2566,13 @@ apollo-tracing@^0.1.0:
 apollo-utilities@1.1.2, apollo-utilities@^1.0.1, apollo-utilities@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.1.2.tgz#aa5eca9d1f1eb721c381a22e0dde03559d856db3"
+  dependencies:
+    fast-json-stable-stringify "^2.0.0"
+    tslib "^1.9.3"
+
+apollo-utilities@1.1.3, apollo-utilities@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.1.3.tgz#a8883c0392f6b46eac0d366204ebf34be9307c87"
   dependencies:
     fast-json-stable-stringify "^2.0.0"
     tslib "^1.9.3"
@@ -5416,6 +5444,14 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
 
+fusion-test-utils@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/fusion-test-utils/-/fusion-test-utils-1.3.1.tgz#416a095c8347240011ca9abdbb92d36a111c677a"
+  dependencies:
+    assert "^1.4.1"
+    koa "^2.6.2"
+    node-mocks-http "^1.6.6"
+
 gauge@~2.7.3:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/gauge/-/gauge-2.7.4.tgz#2c03405c7538c39d7eb37b317022e325fb018bf7"
@@ -7680,7 +7716,7 @@ node-libs-browser@^2.0.0:
     util "^0.11.0"
     vm-browserify "0.0.4"
 
-node-mocks-http@^1.7.3:
+node-mocks-http@^1.6.6, node-mocks-http@^1.7.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/node-mocks-http/-/node-mocks-http-1.7.3.tgz#1c744189f012c1977f4d97443495931a7cd5b4d3"
   dependencies:
@@ -8419,6 +8455,14 @@ prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.1:
   version "15.7.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.1.tgz#2fa61e0a699d428b40320127733ee2931f05d9d1"
   dependencies:
+    object-assign "^4.1.1"
+    react-is "^16.8.1"
+
+prop-types@^15.7.2:
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  dependencies:
+    loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
