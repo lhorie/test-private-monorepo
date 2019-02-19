@@ -2,9 +2,7 @@
   "private": true,
   "scripts": {
     "git": "run() {\n cd public; git \"$@\"; cd ..; git \"$@\"; \n}\n run",
-    "commit": "run() {\ncd public; git add .; git commit \"$@\"; cd ..; git add .; git commit \"$@\"; \n}\n run"
-  },
-  "devDependencies": {
-    "flow-bin": "0.93.0"
+    "commit": "run() {\ncd public; git add .; git commit \"$@\"; cd ..; git add .; git commit \"$@\"; \n}\n run",
+    "install": "rush update; node scripts/fix-symlinks; rush build; rm -rf node_modules"
   }
 }

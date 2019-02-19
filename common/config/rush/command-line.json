@@ -2,7 +2,7 @@
  * This configuration file defines custom commands for the "rush" command-line.
  * For full documentation, please see https://rushjs.io
  */
-{
+ {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/command-line.schema.json",
 
   /**
@@ -26,11 +26,11 @@
       "enableParallelism": true
     },
     {
-      "commandKind": "bulk",
+      "commandKind": "global",
       "name": "flow",
       "summary": "Check types",
       "description": "Check types",
-      "enableParallelism": true
+      "shellCommand": "common/temp/node_modules/.bin/flow check"
     },
     // {
     //   /**
