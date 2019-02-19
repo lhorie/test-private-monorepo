@@ -254,18 +254,6 @@
    * 3. It's useful to have a centralized inventory of all projects and their important metadata.
    */
   "projects": [
-    {
-      "packageName": "my-public",
-      "projectFolder": "public/my-public",
-    },
-    {
-      "packageName": "my-other",
-      "projectFolder": "public/my-other",
-    },
-    {
-      "packageName": "my-private",
-      "projectFolder": "private/my-private",
-    },
     // {
     //   /**
     //    * The NPM package name of the project (must match package.json)
